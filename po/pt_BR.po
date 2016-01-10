@@ -1,0 +1,1991 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: gabber 1.9.4"
+"Report-Msgid-Bugs-To: "
+"POT-Creation-Date: 2004-06-11 22:59-0400"
+"PO-Revision-Date: 2004-07-26 11:46-0300\n"
+"Last-Translator: Goedson Teixeira Paixao <goedson@debian.org>"
+"Language-Team: Debian Localization <debian-l10n-portuguese@lists.debian.org>"
+"MIME-Version: 1.0"
+"Content-Type: text/plain; charset=UTF-8 "
+"Content-Transfer-Encoding: 8bit"
+
+#: gabber.schemas.in.h:1
+msgid "Allow others to see idle time"
+msgstr "Permitir que outros vejam o tempo inativo"
+
+#: gabber.schemas.in.h:2
+msgid "Autoaway status message"
+msgstr "Mensagem de estado de ausência automática"
+
+#: gabber.schemas.in.h:3 ui/Prefs_win.glade.h:13
+msgid "Automatically change presence when idle"
+msgstr "Mudar presença automaticamente quando inativo"
+
+#: gabber.schemas.in.h:4
+msgid "Automatically connect on Gabber startup"
+msgstr "Conectar autmaticamente ao iniciar o Gabber"
+
+#: gabber.schemas.in.h:5 ui/Prefs_win.glade.h:14
+msgid "Automatically display messages when Available or Free for Chat"
+msgstr "Mostrar mesnagens automaticamente quando Disponível ou Livre para Conversa"
+
+#: gabber.schemas.in.h:6
+msgid "Automatically reconnect when disconnected"
+msgstr "Reconectar automaticamente quando desconectado"
+
+#: gabber.schemas.in.h:7
+msgid "Away after x minutes"
+msgstr "Ausente depois de x minutos"
+
+#: gabber.schemas.in.h:8 ui/Prefs_win.glade.h:17
+msgid "Check messages for spelling mistakes"
+msgstr "Verificar ortografia das mensagens"
+
+#: gabber.schemas.in.h:9
+msgid "Extended Away after x minutes"
+msgstr "Ausência extendida depois de x minutos"
+
+#: gabber.schemas.in.h:10
+msgid "Groups that are expanded between sessions."
+msgstr "Grupos que são expandidos entre sessões."
+
+#: gabber.schemas.in.h:11
+msgid "Hide Offline Contacts"
+msgstr "Esconder Contatos Desconectados"
+
+#: gabber.schemas.in.h:12
+msgid ""
+"If Gabber was compiled with SSL support enabled and this is enabled, Gabber "
+"will use OpenSSL to encrypt a socket to the server. This does not encrypt "
+"messages going from the server to another server."
+msgstr ""
+"Se Gabber foi compilado com suporte a SSL habilitado e este ítem está "
+"habilitado, Gabber usará OpenSSL para codificar um socket para o servidor. "
+"Isto não codifica as mensagens indo de um servidor para outro servidor."
+
+#: gabber.schemas.in.h:13
+msgid ""
+"If autoaway is enabled, Gabber will set your presence to Away after the "
+"specified number of minutes"
+msgstr ""
+"Se ausência automática está habilitada, Gabber alterará a sua presença "
+"para Ausente após o número especificado de minutos"
+
+#: gabber.schemas.in.h:14
+msgid ""
+"If autoaway is enabled, Gabber will set your presence to Extended Away after "
+"the specified number of minutes"
+msgstr ""
+"Se ausência automática está habilitada, Gabber alterará a sua presença para "
+"Ausência Prolongada após o número especificado de minutos"
+
+#: gabber.schemas.in.h:15
+msgid ""
+"If this is enabled, Gabber will automatically attempt to connect to the "
+"server when you start it, rather than presenting you a Log In dialog. It "
+"will prompt for a password if one is not saved."
+msgstr ""
+"Se esta opção estiver habilitada, Gabber tentará conectar ao servidor "
+"quando você o iniciar, ao invés de apresentar o diálogo de Log In. Ele "
+"pedirá uma senha caso uma não esteja gravada."
+
+#: gabber.schemas.in.h:16
+msgid ""
+"If this is enabled, Gabber will automatically attempt to reconnect when "
+"disconnected for whatever reason."
+msgstr ""
+"Se esta opção estiver habilitada, Gabber tentará reconectar automaticamente "
+"quando for desconectado por qualquer motivo."
+
+#: gabber.schemas.in.h:17
+msgid ""
+"If this is enabled, Gabber will automatically open messages when your status "
+"is Available or Free for Chat. Messages will still be queued up when you are "
+"Away, Busy, or Extended Away."
+msgstr ""
+"Se esta opção estiver habilitada, Gabber abrirá mensagens automaticamente "
+"quando o seu estado for Disponível ou livre para Conversa. Mensagens ainda "
+"serão enfileiradas quando você estiver Ausente, Ocupado ou em Ausência "
+"Prolongada."
+
+#: gabber.schemas.in.h:18
+msgid ""
+"If this is enabled, Gabber will check the spelling of messages and chats "
+"using aspell or ispell."
+msgstr ""
+"Se esta opção estiver habilitada, Gabber verificará a ortografia das " 
+"mensagens e conversas usando aspell ou ispell."
+
+#: gabber.schemas.in.h:19
+msgid ""
+"If this is enabled, Gabber will poll the XScreenSaver Extension to figure "
+"out when this X session is idle. After the specified amount of time, Gabber "
+"will automatically change presence to Away and then Extended Away."
+msgstr ""
+"Se esta opção estiver habilitada, Gabber irá consultar a extensão "
+"XScreenSaver para descobrir quando esta sessão X está inativa. Depois "
+"da quantidade de tempo especificada, Gabber mudará automaticamente a presença "
+"para Ausente e depois para Ausência Prolongada."
+
+#: gabber.schemas.in.h:20
+msgid ""
+"If this is enabled, Gabber will set the presence priority to 0 when "
+"autoaway. This means that if you have other clients or connections to Jabber "
+"on the same account with a priority higher than 0, messages will go to those "
+"clients instead of your now-idle Gabber connection."
+msgstr ""
+"Se esta opção estiver habilitada, Gabber alterará a prioridade da presença "
+"para 0 quando ausente automaticamente. Isto significa que se você tiver "
+"outros clientes ou conexões Jabber na mesma conta com uma prioridade maior "
+"que 0, mensagens irão para esses clientes ao invés da sua conexão Gabber que "
+"agora está inativa."
+
+#: gabber.schemas.in.h:21
+msgid ""
+"If this is enabled, offline contacts in the contact list will not be "
+"displayed."
+msgstr ""
+"Se esta opção estiver habilitada, contatos que estejam desconectados "
+"não serão mostrados na lista de contatos."
+
+#: gabber.schemas.in.h:22
+msgid ""
+"If this is enabled, other people may see how long your X session has been "
+"idle. If this is disabled, autoaway can still work--others will see that "
+"you're away--but they won't know how long you've been away."
+msgstr ""
+"Se esta opção estiver habilitada, outras pessoas podem ver a quanto tempo "
+"sua sessão X esteve inativa. Se esta opção estiver desabilitada, autoausente "
+"ainda pode funcionar--outros verão que você está ausente--mas não saberão "
+"há quanto tempo você está ausente."
+
+#: gabber.schemas.in.h:23
+msgid ""
+"If this is set to true, Gabber will encrypt and store the Jabber password "
+"for future use. Otherwise it will be forgotten after each session."
+msgstr ""
+"Se esta opção estiver habilitada, Gabber encriptará e armazenará a senha "
+"Jabber para uso futuro. Senão a senha será esquecida ao final da sessão."
+
+#: gabber.schemas.in.h:24 ui/Prefs_win.glade.h:29
+msgid "Set the presence priority to 0"
+msgstr "Modificar prioridade da presença para 0"
+
+#: gabber.schemas.in.h:25
+msgid "The JID of the avatar pubsub server"
+msgstr "O JID do servidor de avatar"
+
+#: gabber.schemas.in.h:26
+msgid "The Jabber password. Do not change this."
+msgstr "A senha Jabber. Não mude isto."
+
+#: gabber.schemas.in.h:27
+msgid ""
+"The Jabber password. If you see nothing here, then savepassword was probably "
+"set to false. Do not change this. It is encrypted."
+msgstr ""
+"A senha Jabber. Se você não vê nada aqui, provavelmente savepassword estava "
+"com valor falso. Não mude isto. O valor está encriptado."
+
+#: gabber.schemas.in.h:28
+msgid "The Jabber resource"
+msgstr "O recurso Jabber"
+
+#: gabber.schemas.in.h:29
+msgid ""
+"The Jabber resource. Your resource should be unique so you can log into the "
+"same Jabber account from different computers (or Jabber clients) at the same "
+"time. Generally it is either the name of the client you're using or the name "
+"of your computer."
+msgstr ""
+"O recurso Jabber. Seu recurso deve ser único para que você possa logar na "
+"mesma conta Jabber de computadores (ou clientes Jabber) diferentes ao mesmo "
+"tempo. Geralmente é o nome do cliente que você está usando ou o nome do seu "
+"computador."
+
+#: gabber.schemas.in.h:30
+msgid "The Jabber server"
+msgstr "O servidor Jabber"
+
+#: gabber.schemas.in.h:31
+msgid "The Jabber server port"
+msgstr "O porto do servidor Jabber"
+
+#: gabber.schemas.in.h:32
+msgid ""
+"The Jabber server to connect to. Current large jabber servers include jabber."
+"com and jabber.org. See http://www.jabberview.com/ for a list of some of the "
+"public servers."
+msgstr ""
+"O servidor Jabber ao qual quer se conectar. Jabber.com e jabber.org são dois "
+"servidores públicos bastante populares. Para uma lista dos servidores "
+"públicos disponíveis, veja http://www.jabberview.com/."
+
+
+#: gabber.schemas.in.h:33
+msgid "The Jabber username"
+msgstr "O nome de usuário Jabber"
+
+#: gabber.schemas.in.h:34
+msgid "The MD5 hash of the image that was last used on the local system."
+msgstr ""
+"A assinatura MD5 da imagem que foi usada pela última vez no sistema "
+"local."
+
+#: gabber.schemas.in.h:35
+msgid "The MD5 hash of the local avatar."
+msgstr "A assinatura MD5 do avatar local."
+
+#: gabber.schemas.in.h:36
+msgid "The default nickname for group chats."
+msgstr "O apelido padrão para conversas em grupo."
+
+#: gabber.schemas.in.h:37
+msgid "The filename of the current avatar."
+msgstr "O nome do arquivo do avatar atual."
+
+#: gabber.schemas.in.h:38
+msgid "The list of the plugins"
+msgstr "A lista de plugins"
+
+#: gabber.schemas.in.h:39
+msgid "The node to use on the avatar pubsub server for avatar info"
+msgstr "O nodo a usar no servidor de avatar para informação de avatar"
+
+#: gabber.schemas.in.h:40
+msgid "The plugins listed here will load automatically at startup"
+msgstr ""
+"Os plugins listados aqui serão carregados automaticamente ao "
+"iniciar"
+
+#: gabber.schemas.in.h:41
+msgid ""
+"The port on the Jabber server to connect to. Jabber servers are generally "
+"set up listening on port 5222, although some Jabber servers listen for an "
+"SSL connection on 5223."
+msgstr ""
+
+#: gabber.schemas.in.h:42
+msgid ""
+"The priority you will connect with. Important to consider if you connect "
+"from different places simultaneously; the session with the highest priority "
+"will receive incoming messages."
+msgstr ""
+"A prioridade com a qual você irá conectar. Este valor é importante caso você "
+"se conecte de vários lugares simultâneamente; a sessão com a prioridade mais "
+"alta receberá as mensagens que estão chegando."
+
+#: gabber.schemas.in.h:43
+msgid ""
+"This is the JID where the pubsub server resides with the node for avatar "
+"publishes."
+msgstr ""
+"Este é o JID onde o servidor reside com o nó para publicações de avatar."
+
+#: gabber.schemas.in.h:44
+msgid ""
+"This is the default nickname which is used in the join group chat dialog."
+msgstr ""
+"Este é o apelido padrão utilizado no diálogo de entrar em conversa em grupo."
+
+#: gabber.schemas.in.h:45
+msgid "This is the node to use on the pubsub server for avatar publishes."
+msgstr "Este é o nó a ser usado no servidor pubsub para publicações de avatar."
+
+#: gabber.schemas.in.h:46
+msgid ""
+"This is the status message Gabber will use when setting your presence to "
+"Away or Extended Away"
+msgstr ""
+"Esta é a mensagem que o Gabber usará quando mudar a sua presença para Ausente "
+"ou Ausência Prolongada"
+
+#: gabber.schemas.in.h:47
+msgid ""
+"This list is all the groups that will be autoexpanded between logins and "
+"when hiding offline contacts is toggled."
+msgstr ""
+"Esta lista contém todos os grupos que serão expandidos automaticamente entre "
+"logins e quando a opção de esconder contatos desconectados for alterada."
+
+#: gabber.schemas.in.h:48
+msgid "This session's priority"
+msgstr "Prioridade desta sessão"
+
+#: gabber.schemas.in.h:49
+msgid "Use SSL encrypted communication with the server"
+msgstr "Usar comunicação SSL com o servidor"
+
+#: gabber.schemas.in.h:50
+msgid "Whether or not to save the Jabber password"
+msgstr "Salvar ou não a senha Jabber"
+
+#: gabber.schemas.in.h:51
+msgid "height of contact list window"
+msgstr "altura da janela com a lista de contatos"
+
+#: gabber.schemas.in.h:52
+msgid "width of contact list window"
+msgstr "largura da janela com a lista de contatos"
+
+#: gabber.schemas.in.h:53
+msgid "x position of contact list window"
+msgstr "posição x da janela da lista de contatos"
+
+#: gabber.schemas.in.h:54
+msgid "y position of contact list window"
+msgstr "posição y da janela da lista de contatos"
+
+#: src/AddContactDlg.cc:89
+msgid "Other..."
+msgstr "Outros..."
+
+#: src/AddContactDlg.cc:379 ui/AddContact_dlg.glade.h:2
+#: ui/S10nRequest_dlg.glade.h:6
+msgid "<i>Please wait, fetching info...</i>"
+msgstr "<i>Por favor aguarde, buscando informação...</i>"
+
+#: src/AddContactDlg.cc:382 ui/AddContact_dlg.glade.h:8
+msgid "IM ID:"
+msgstr "IM ID:"
+
+#: src/AutoAway.cc:98
+msgid "Moving to extended away"
+msgstr "Movendo para ausência prolongada"
+
+#: src/AutoAway.cc:111
+msgid "Starting auto-away"
+msgstr "Iniciando ausência automática"
+
+#. Update the status bar
+#: src/AutoAway.cc:122
+msgid "Returning from auto-away"
+msgstr "Retornando da ausência automática"
+
+#. Format the string to be displayed
+#: src/AutoAway.cc:143
+msgid "Auto away for "
+msgstr "Aumaticamente ausente por "
+
+#: src/AutoAway.cc:145
+msgid "d"
+msgstr ""
+
+#. Set the window title
+#: src/ContactInfo.cc:103 ui/ViewInfo_dlg.glade.h:3
+#, no-c-format
+msgid "%s's Info"
+msgstr "Informação de %s"
+
+#: src/ContactInfo.cc:165
+msgid ""
+"Empty Display Names are not allowed. The Display Name has been changed back "
+"to its previous value."
+msgstr ""
+"Nomes para Exibição vazios não são permitidos. O Nome para Exibição foi "
+"alterado para o seu valor anterior."
+
+#: src/ContactInfo.cc:167
+msgid "Display Name cannot be empty"
+msgstr "Nome para Exibição não pode ser vazio"
+
+#: src/ContactInfo.cc:184
+#, c-format
+msgid ""
+"The Display Name cannot be changed because this Contact (%s) was not found "
+"on the Contact List. This is probably a bug in Gabber."
+msgstr ""
+
+#: src/ContactInfo.cc:186
+msgid "Contact cannot be found"
+msgstr "Contato não pode ser encontrado"
+
+#: src/ContactInfo.cc:325
+msgid "Idle Time"
+msgstr "Tempo Inativo"
+
+
+#: src/ContactInfo.cc:328
+msgid "Typing Notification"
+msgstr "Notificação de digitação"
+
+#: src/ContactInfo.cc:330
+msgid ", Typing Notification"
+msgstr ", Notificação de Digitação"
+
+#: src/ContactInfo.cc:333
+msgid "Basic Group Chat"
+msgstr "Conversa em Grupo Básica"
+
+#: src/ContactInfo.cc:335
+msgid ", Basic Group Chat"
+msgstr ", Conversa em Grupo Básica"
+
+#: src/ContactInfo.cc:338
+msgid "Advanced Group Chat"
+msgstr "Conversa em Grupo Avançada"
+
+#: src/ContactInfo.cc:340
+msgid ", Advanced Group Chat"
+msgstr ", Conversa em Grupo Avançada"
+
+#: src/ContactInfo.cc:343
+msgid "Group Chat Invitation"
+msgstr "Convite para Conversa em Grupo"
+
+#: src/ContactInfo.cc:345
+msgid ", Group Chat Invitation"
+msgstr ", Convite para Conversa em Grupo"
+
+#: src/ContactInfo.cc:348
+msgid "Receive Contacts"
+msgstr "Receber Contatos"
+
+#: src/ContactInfo.cc:350
+msgid ", Receive Contacts"
+msgstr ", Receber Contatos"
+
+#: src/ContactInfo.cc:353
+msgid "Basic File Transfer"
+msgstr "Transferência de Arquivos Básica"
+
+#: src/ContactInfo.cc:355
+msgid ", Basic File Transfer"
+msgstr ", Transferência de Arquivos Básica"
+
+#: src/ContactInfo.cc:358
+msgid "Advanced File Transfer"
+msgstr "Transferência de Arquivos Avançada"
+
+#: src/ContactInfo.cc:360
+msgid ", Advanced File Transfer"
+msgstr ", Transferência de Arquivos Avançada"
+
+#: src/ContactInfo.cc:363
+msgid "Publish/Subscribe"
+msgstr "Publicar/Assinar"
+
+#: src/ContactInfo.cc:365
+msgid ", Publish/Subscribe"
+msgstr ", Publicar/Assinar"
+
+#. Construct an offline presence
+#: src/ContactInfo.cc:432 src/GabberWidgets.cc:398 src/GabberWidgets.cc:459
+#: src/modules/ChatView.cc:226 src/modules/ChatView.cc:577
+msgid "No presence has been received."
+msgstr "Nemhuma presença foi recebida."
+
+#: src/ContactInfo.cc:449 src/ContactInfo.cc:565
+#, c-format
+msgid "%s: %s"
+msgstr "%s: %s"
+
+#: src/ContactInfo.cc:497
+msgid " day"
+msgstr "dia"
+
+#: src/ContactInfo.cc:502
+msgid " days"
+msgstr "dias"
+
+#: src/ContactInfo.cc:513
+msgid " hr"
+msgstr "hr"
+
+#: src/ContactInfo.cc:520
+msgid " hrs"
+msgstr "hrs"
+
+#: src/ContactInfo.cc:531
+msgid " min"
+msgstr "min"
+
+#: src/ContactInfo.cc:538
+msgid " mins"
+msgstr "mins"
+
+#: src/ContactInfo.cc:548
+msgid " sec"
+msgstr "seg"
+
+#: src/ContactInfo.cc:550
+msgid " secs"
+msgstr "segs"
+
+#: src/ContactInfo.cc:562 ui/ViewInfo_dlg.glade.h:26
+#, no-c-format
+msgid "Last logged out %s ago"
+msgstr "Desconectou pela última vez %s atrás"
+
+#: src/ContactInfo.cc:565 src/GabberUtility.cc:186 ui/ViewInfo_dlg.glade.h:31
+msgid "Offline"
+msgstr "Desconectado"
+
+#: src/ContactInfo.cc:569
+#, c-format
+msgid "Idle for %s"
+msgstr "Inativo por %s"
+
+#: src/FileTransferDlg.cc:96
+msgid "Receiving File"
+msgstr "Recebendo Arquivo"
+
+#: src/FileTransferDlg.cc:98
+msgid "Receiving from:"
+msgstr "Recebendo de:"
+
+#: src/FileTransferDlg.cc:147
+msgid "Complete."
+msgstr "completado."
+
+#: src/FileTransferDlg.cc:152
+msgid "Error, more data was transferred than expected."
+msgstr "Erro, fram transmitidos mais dados que o esperado."
+
+#: src/FileTransferDlg.cc:190
+msgid "Under one minute remaining."
+msgstr "Menos de um minuto restante."
+
+#: src/FileTransferDlg.cc:196
+#, c-format
+msgid "%s hours, %s minutes remaining."
+msgstr "%s horas e %s minutos restantes."
+
+#: src/FileTransferDlg.cc:200
+#, c-format
+msgid "%s minutes remaining."
+msgstr "%s minutos restantes."
+
+#: src/FileTransferDlg.cc:215
+msgid "Transfer Stopped"
+msgstr "Transferência Parada"
+
+#: src/FileTransferDlg.cc:216 src/FileTransferDlg.cc:261
+msgid "Close"
+msgstr "Fechar"
+
+#: src/FileTransferDlg.cc:235
+msgid "Disconnecting..."
+msgstr "Desconectando..."
+
+#: src/FileTransferDlg.cc:244
+msgid "Hide details"
+msgstr "Esconder detalhes"
+
+#: src/FileTransferDlg.cc:251 ui/FTSend_dlg.glade.h:6
+#: ui/FTTransfer_dlg.glade.h:9
+msgid "Show details"
+msgstr "Exibir detalhes"
+
+#: src/GabberApp.cc:140 src/GabberApp.cc:169
+msgid "Password required"
+msgstr "Senha requerida"
+
+#: src/GabberApp.cc:170
+#, c-format
+msgid "Enter your password for JabberID <b>%s@%s</b>."
+msgstr "Entre a sua senha para o JabberID <b>%s@%s</b>"
+
+#: src/GabberApp.cc:177 ui/GCJoin_dlg.glade.h:7 ui/Login_dlg.glade.h:33
+msgid "_Password:"
+msgstr "_Senha:"
+
+#: src/GabberApp.cc:234
+msgid "Logged Out"
+msgstr "Desconectado"
+
+#: src/GabberApp.cc:310
+msgid ""
+"<b>Could not log in: Authorization failed</b>\n"
+"Your username or password may be incorrect."
+msgstr ""
+"<b>Não foi possível efetuar o login: Autorização falhou</b>\n"
+"Seu nome de usuário ou senha podem estar incorretos."
+
+#: src/GabberApp.cc:311
+msgid "Authorization failed"
+msgstr "Autorização falhou"
+
+#: src/GabberApp.cc:319
+msgid ""
+"<b>Could not log in: External registration required</b>\n"
+"This server requires some sort of external registration or payment. Try "
+"looking at the server's web site."
+msgstr ""
+"<b>Não foi possível efetuar o login: Registro externo requerido</b.\n"
+"Este servidor requer alguma forma de registro externo ou pagamento. Tente "
+"olhar no sítio web do servidor."
+
+#: src/GabberApp.cc:320
+msgid "External registration required"
+msgstr "Registro externo requerido"
+
+#: src/GabberApp.cc:327
+msgid ""
+"<b>Could not log in: Required information not provided</b>\n"
+"Additional authentication is required. Make sure the password is not blank. "
+"It is possible Gabber does not support the authentication required for this "
+"server."
+msgstr ""
+"<b>Não foi possivel efetuar o login: Informação requerida não fornecida</b>\n"
+"Autenticação adicional é requerida. Certifique-se que a senha não está em "
+"branco. É possível que Gabber não suporte a autenticação requerida por este "
+"servidor." 
+
+#: src/GabberApp.cc:328
+msgid "Required information not provided"
+msgstr "Informação requerida não fornecida"
+
+#: src/GabberApp.cc:335
+msgid ""
+"<b>Could not log in: Resource conflict</b>\n"
+"You have another connection using the same resource. Choose a different "
+"resource."
+msgstr ""
+"<b>Não foi possível efetuar o login: Conflito de recurso</b>\n"
+"Você tem outra conexão usando o mesmo recurso. Escolha um recurso "
+"diferente."
+
+#: src/GabberApp.cc:336
+msgid "Resource conflict"
+msgstr "Conflito de recurso"
+
+#: src/GabberApp.cc:343
+msgid ""
+"<b>Could not log in: Internal server error</b>\n"
+"This server encountered an error while attempting to authenticate. Try again "
+"later. It is possible Gabber does not support the authentication required "
+"for this server."
+msgstr ""
+
+#: src/GabberApp.cc:344 src/GabberApp.cc:352
+msgid "Internal server error"
+msgstr ""
+
+#: src/GabberApp.cc:351
+msgid ""
+"<b>Could not log in</b>\n"
+"An unknown error occurred while attempting to log in."
+msgstr ""
+"<b>Não foi possível efetuar o login</b>\n"
+"Um erro desconhecido aconteceu enquanto tentava efetuar "
+"o login." 
+
+#: src/GabberUtility.cc:184
+msgid "Invalid"
+msgstr "Inválido"
+
+#: src/GabberUtility.cc:188
+msgid "Available"
+msgstr "Disponível"
+
+#: src/GabberUtility.cc:190
+msgid "Free for Chat"
+msgstr "Livre para Conversa"
+
+#: src/GabberUtility.cc:192
+msgid "Away"
+msgstr "Ausente"
+
+#: src/GabberUtility.cc:194
+msgid "Extended Away"
+msgstr "Ausência Prolongada"
+
+#: src/GabberUtility.cc:196
+msgid "Busy"
+msgstr "Ocupado"
+
+#: src/GabberUtility.cc:229
+msgid "both"
+msgstr "ambos"
+
+#: src/GabberUtility.cc:231
+msgid "from"
+msgstr "de"
+
+#: src/GabberUtility.cc:233
+msgid "to"
+msgstr "para"
+
+#: src/GabberUtility.cc:236
+msgid "none"
+msgstr "nenhum"
+
+#: src/GabberUtility.cc:245
+msgid "Both of you can see each other's presence."
+msgstr "Vocês dois podem ver a presença do outro."
+
+#: src/GabberUtility.cc:247
+msgid "You cannot see their presence, but they can see yours."
+msgstr "Você não pode ver a presença do outro, mas ele pode ver a sua."
+
+#: src/GabberUtility.cc:249
+msgid "You can see their presence, but they cannot see yours."
+msgstr "Você pode ver a presença do outro, mas ele não pode ver a sua."
+
+#: src/GabberUtility.cc:253
+msgid "Neither of you can see the other's presence."
+msgstr "Nenhum de vocês pode ver a presença do outro."
+
+#: src/GabberWin.cc:246 ui/FTTransfer_dlg.glade.h:3
+msgid "Connecting..."
+msgstr "Conectando..."
+
+#: src/GabberWin.cc:263
+msgid "Connected"
+msgstr "Conectado"
+
+#: src/GabberWin.cc:309
+msgid "Disconnected"
+msgstr "Desconectado"
+
+#: src/GabberWin.cc:388
+#, c-format
+msgid "You are now %s"
+msgstr "Agora você está %s"
+
+#: src/GabberWin.cc:436
+#, c-format
+msgid "%s came online"
+msgstr "%s se conectou"
+
+#: src/GabberWin.cc:441
+#, c-format
+msgid "%s went offline"
+msgstr "%s se desconectou"
+
+#: src/GabberWin.cc:479
+msgid "translator_credits"
+msgstr "Goedson Teixeira Paixão &lt;goedson@debian.org&gt;"
+
+#: src/GabberWin.cc:483
+#, c-format
+msgid ""
+"Generously translated by: %s\n"
+"\n"
+msgstr ""
+"Generosamente traduzido por: %s\n"
+"\n"
+
+#: src/GabberWin.cc:485
+msgid "Extensible easy-to-use Jabber client"
+msgstr "Cliente Jabber extensível e fácil de usar"
+
+#: src/GabberWin.cc:496
+msgid "About Gabber"
+msgstr "Sobre o Gabber"
+
+#: src/GabberWin.cc:515
+msgid "Talk to me!"
+msgstr "Fale comigo!"
+
+#: src/GabberWin.cc:518
+msgid "I'm not here, I'll be back soon."
+msgstr "Não estou aqui, volto já."
+
+#: src/GabberWin.cc:521
+msgid "I'll be away for a while."
+msgstr "Vou me ausentar por uns instantes."
+
+#: src/GabberWin.cc:524
+msgid "Sorry, I'm busy."
+msgstr "Desculpe, estou ocupado."
+
+#: src/GabberWin.cc:527
+msgid "Invisible to everyone else."
+msgstr "Invisível para todos."
+
+#. Set the window title
+#: src/GroupsEditor.cc:77 ui/EditGroups_dlg.glade.h:2
+#, no-c-format
+msgid "%s's Groups"
+msgstr "Grupos de %s"
+
+#: src/GroupsEditor.cc:93
+msgid "Available Groups"
+msgstr "Grupos Disponíveis"
+
+#: src/GroupsEditor.cc:105
+msgid "Current Groups"
+msgstr "Grupos Atuais"
+
+#: src/LogViewer.cc:70
+#, c-format
+msgid "Logs for %s"
+msgstr "Registros de %s"
+
+#: src/RegisterGateway.cc:70 ui/RegisterGateway_dlg.glade.h:4
+#, no-c-format
+msgid "From %s's list:"
+msgstr "Da lista de %s:"
+
+#: src/RegisterGateway.cc:100 src/RegisterGateway.cc:115
+msgid "<empty>"
+msgstr "<vazio>"
+
+#: src/RegisterGateway.cc:155
+#, c-format
+msgid "<i>Please wait, fetching info from %s</i>"
+msgstr "<i>Por favor aguarde, recuperando informação de %s</i>"
+
+#. error case
+#: src/RegisterGateway.cc:311
+#, c-format
+msgid "There was an error attempting to register with %s!"
+msgstr "Houve um erro tentando registrar com %s!"
+
+#: src/RosterView.cc:249
+#, c-format
+msgid "Are you sure you want to remove %s (%s) from your Contact List?"
+msgstr "Tem certeza que deseja remover %s (%s) da sua Lista de Contatos?"
+
+#: src/RosterView.cc:251
+#, c-format
+msgid "Remove %s from Contact List"
+msgstr "Remover %s da Lista de Contatos"
+
+#: src/RosterView.cc:252
+msgid "_Don't Remove"
+msgstr "_Não Remover"
+
+#: src/S5B.cc:100
+msgid "No valid StreamHost found"
+msgstr "Nenhum StreamHost válido encontrado"
+
+#. XXX screw this one
+#: src/S5B.cc:211
+msgid "Malformed packet, no hosts offered."
+msgstr "Pacote mal-formado, nenhum host oferecido."
+
+#. XXX This is an error!
+#: src/S5B.cc:225
+msgid "No activate found"
+msgstr "Nenhum activate encontrado"
+
+#: src/S5B.cc:308
+msgid "Error negotiating transfer."
+msgstr "Erro negociando a transferência."
+
+#: src/S5B.cc:319
+msgid "Invalid host selected."
+msgstr "Servidor inválido selecionado."
+
+#: src/S5B.cc:375
+msgid "Unable to negotiate transfer."
+msgstr "Impossível negociar transferência."
+
+#: src/S5B.cc:399
+msgid "Could not activate proxy."
+msgstr "Não foi possível ativar proxy."
+
+#: src/StatusIcon.cc:52 ui/Gabber_win.glade.h:7
+msgid "Gabber"
+msgstr "Gabber"
+
+#: src/StatusIcon.cc:80
+msgid "Gabber Message Queue"
+msgstr "Fila de Mensagens Gabber"
+
+#. Set the tooltip
+#: src/StatusIcon.cc:103
+msgid "Pending Message"
+msgstr "Mensagem Pendente"
+
+#. Set the window title
+#. set the title back to normal, they've seen this window
+#: src/modules/ChatView.cc:184 src/modules/ChatView.cc:304
+#: src/modules/ChatView.cc:415 ui/OOOChat_win.glade.h:3
+#, no-c-format
+msgid "Chat with %s"
+msgstr "Conversa com %s"
+
+#: src/modules/ChatView.cc:349
+#, c-format
+msgid ""
+"A message was just received from %s, are you sure you want to close this "
+"chat?"
+msgstr ""
+"Uma mensagem acabou de ser recebida de %s, você tem certeza que quer fechar "
+"esta conversa?"
+
+#: src/modules/ChatView.cc:351
+#, c-format
+msgid "Close chat with %s"
+msgstr "Fechar conversa com %s"
+
+#: src/modules/ChatView.cc:352 src/modules/GCView.cc:205
+msgid "_Don't Close"
+msgstr "_Não Fechar"
+
+#: src/modules/ChatViewManager.cc:46
+msgid "_One-on-one Chat..."
+msgstr "_Conversa Um-para-um..."
+
+#: src/modules/ChatViewManager.cc:47
+msgid "New _One-on-one Chat..."
+msgstr "Nova _Conversa Um-para-um..."
+
+#: src/modules/GCView.cc:80
+#, c-format
+msgid "Group Chat in %s"
+msgstr "Conversa em Grupo em %s"
+
+#: src/modules/GCView.cc:115
+msgid "Participants"
+msgstr "Participantes"
+
+#: src/modules/GCView.cc:202
+#, c-format
+msgid "Would you like to close the group chat in room %s?"
+msgstr "Você quer fechar a conversa em grupo na sala %s?"
+
+#: src/modules/GCView.cc:204
+#, c-format
+msgid "Close group chat %s"
+msgstr "Fechar conversa em grupo %s"
+
+#: src/modules/GCView.cc:227
+#, c-format
+msgid "%s has set the subject to: %s"
+msgstr "%s mudou o assunto para: %s"
+
+#: src/modules/RawViewManager.cc:46
+msgid "_Raw XML Input..."
+msgstr "Entrada XML Crua..."
+
+#: src/modules/StandaloneSendDlg.cc:288
+msgid "New Standalone Message"
+msgstr "Nova Mensagem Isolada"
+
+#: src/modules/StandaloneSendDlg.cc:293
+#, c-format
+msgid "Message to %s"
+msgstr "Mensagem para %s"
+
+#: src/modules/StandaloneView.cc:55 ui/StandaloneMsgRecv_dlg.glade.h:3
+#, no-c-format
+msgid "Message from %s"
+msgstr "Mensagem de %s"
+
+#. Create side label
+#: src/modules/StandaloneView.cc:254
+msgid "Attached URI:"
+msgstr "URI Anexa:"
+
+#: src/modules/StandaloneViewManager.cc:45
+msgid "Standalone Message..."
+msgstr "Mensagem Isolada..."
+
+#: src/modules/StandaloneViewManager.cc:46
+msgid "New _Standalone Message..."
+msgstr "Nova Mensagem Isolada..."
+
+#: ui/AddContact_dlg.glade.h:1 ui/EditGroups_dlg.glade.h:3
+#: ui/FTRecv_dlg.glade.h:1 ui/FTSend_dlg.glade.h:1 ui/GChat_win.glade.h:1
+#: ui/GCJoin_dlg.glade.h:2 ui/Login_dlg.glade.h:2 ui/MyInfo_dlg.glade.h:2
+#: ui/Prefs_win.glade.h:2 ui/RegisterGateway_dlg.glade.h:1
+#: ui/S10nRequest_dlg.glade.h:1 ui/StandaloneMsgSend_dlg.glade.h:1
+#: ui/ViewInfo_dlg.glade.h:4
+msgid "*"
+msgstr ""
+
+#: ui/AddContact_dlg.glade.h:3
+msgid "Add Contact"
+msgstr "Adicionar Contato"
+
+#: ui/AddContact_dlg.glade.h:4 ui/S10nRequest_dlg.glade.h:8
+msgid "Choose..."
+msgstr "Escolher..."
+
+#: ui/AddContact_dlg.glade.h:5 ui/S10nRequest_dlg.glade.h:9
+msgid "Custom Name"
+msgstr "Nome Personalizado"
+
+#: ui/AddContact_dlg.glade.h:6
+msgid "Display"
+msgstr "Mostrar"
+
+#: ui/AddContact_dlg.glade.h:7 ui/S10nRequest_dlg.glade.h:10
+msgid "Full Name"
+msgstr "Nome Completo"
+
+#: ui/AddContact_dlg.glade.h:9
+msgid "Instant Messaging _System to use:"
+msgstr "_Sistema de Mensagem Instantâne a usar:"
+
+#: ui/AddContact_dlg.glade.h:10
+msgid "Jabber"
+msgstr "Jabber"
+
+#: ui/AddContact_dlg.glade.h:11 ui/S10nRequest_dlg.glade.h:11
+msgid "Jabber ID:"
+msgstr "ID Jabber:"
+
+#: ui/AddContact_dlg.glade.h:12 ui/S10nRequest_dlg.glade.h:12
+msgid "Nickname"
+msgstr "Apelido"
+
+#: ui/AddContact_dlg.glade.h:13
+msgid "_Add Contact"
+msgstr "_Adicionar Contato"
+
+#: ui/AddContact_dlg.glade.h:14
+msgid "_Search..."
+msgstr "Procurar..."
+
+#: ui/AddContact_dlg.glade.h:15 ui/S10nRequest_dlg.glade.h:18
+msgid "in Contact List"
+msgstr "na Lista de Contatos"
+
+#: ui/EditGroups_dlg.glade.h:4
+msgid "<b>Available Groups</b>"
+msgstr "<b>Grupos Disponíveis</b>"
+
+#: ui/EditGroups_dlg.glade.h:5
+msgid "<b>Current Groups</b>"
+msgstr "<b>Grupos Atuais</b>"
+
+#: ui/EditGroups_dlg.glade.h:6
+msgid "Groups for:"
+msgstr "Grupos para:"
+
+#: ui/EditGroups_dlg.glade.h:7
+msgid "_Add"
+msgstr "_Adicionar"
+
+#: ui/EditGroups_dlg.glade.h:8
+msgid "_Group:"
+msgstr "_Grupo:"
+
+#: ui/EditGroups_dlg.glade.h:9
+msgid "_Remove"
+msgstr "_Remover"
+
+#: ui/FTRecv_dlg.glade.h:2 ui/FTSend_dlg.glade.h:2 ui/Prefs_win.glade.h:16
+msgid "Browse..."
+msgstr "Procurar..."
+
+#: ui/FTRecv_dlg.glade.h:3
+msgid "Description:"
+msgstr "Descrição:"
+
+#: ui/FTRecv_dlg.glade.h:4 ui/FTTransfer_dlg.glade.h:5
+msgid "File Name:"
+msgstr "Nome do Arquivo:"
+
+#: ui/FTRecv_dlg.glade.h:5 ui/StandaloneMsgRecv_dlg.glade.h:1
+msgid "From:"
+msgstr "De:"
+
+#: ui/FTRecv_dlg.glade.h:7
+#, no-c-format
+msgid "Offered File from %s"
+msgstr "Arquivo oferecido de %s"
+
+#: ui/FTRecv_dlg.glade.h:8 ui/StandaloneMsgRecv_dlg.glade.h:5
+#: ui/ViewInfo_dlg.glade.h:43
+msgid "Time:"
+msgstr "Hora:"
+
+#: ui/FTRecv_dlg.glade.h:9
+msgid "_Accept File"
+msgstr "_Aceitar Arquivo"
+
+#: ui/FTRecv_dlg.glade.h:10
+msgid "_Decline File"
+msgstr "_Descartar Arquivo"
+
+#: ui/FTRecv_dlg.glade.h:11
+msgid "_Save Location:"
+msgstr "_Savar em:"
+
+#: ui/FTSend_dlg.glade.h:3
+msgid "Proxy Address:"
+msgstr "Endereço do Proxy:"
+
+#: ui/FTSend_dlg.glade.h:4
+msgid "Send File to:"
+msgstr "Enviar Arquivo para:"
+
+#: ui/FTSend_dlg.glade.h:5
+msgid "Send a File"
+msgstr "Enviar um Arquivo"
+
+#: ui/FTSend_dlg.glade.h:7
+msgid "Transfer Method:"
+msgstr "Método de Transferência:"
+
+#: ui/FTSend_dlg.glade.h:8
+msgid "_Description:"
+msgstr "_Descrição:"
+
+#: ui/FTSend_dlg.glade.h:9
+msgid "_File to Send:"
+msgstr "Arquivo a Enviar:"
+
+#: ui/FTSend_dlg.glade.h:10 ui/RawInput_dlg.glade.h:2
+#: ui/StandaloneMsgSend_dlg.glade.h:5
+msgid "_Send"
+msgstr "Enviar"
+
+#: ui/FTTransfer_dlg.glade.h:1
+msgid "0.0 kB"
+msgstr "0,0 kB"
+
+#: ui/FTTransfer_dlg.glade.h:2
+msgid "0.0 kB/sec"
+msgstr "0,0 kB/seg"
+
+#: ui/FTTransfer_dlg.glade.h:4
+msgid "File Location:"
+msgstr "Localização do Arquivo:"
+
+#: ui/FTTransfer_dlg.glade.h:6
+msgid "File Size:"
+msgstr "Tamanho do Aquivo:"
+
+#: ui/FTTransfer_dlg.glade.h:7
+msgid "Sending File"
+msgstr "Enviando Arquivo"
+
+#: ui/FTTransfer_dlg.glade.h:8
+msgid "Sending to"
+msgstr "Enviando para"
+
+#: ui/FTTransfer_dlg.glade.h:10
+msgid "Size Remaining:"
+msgstr "Tamanho Restante:"
+
+#: ui/FTTransfer_dlg.glade.h:11
+msgid "Transfer Speed:"
+msgstr "Velocidade de Transferência:"
+
+#: ui/Gabber_win.glade.h:1
+msgid "(0)"
+msgstr "(0)"
+
+#: ui/Gabber_win.glade.h:2
+msgid "A_way"
+msgstr "Ausente"
+
+#: ui/Gabber_win.glade.h:3 ui/OOOChat_win.glade.h:1 ui/ViewInfo_dlg.glade.h:15
+msgid "Add Contact..."
+msgstr "Adicionar Contato..."
+
+#: ui/Gabber_win.glade.h:4
+msgid "Browse Agents & IM Systems..."
+msgstr "Procurar Agentes e Sistemas de Mensagens Instatâneas"
+
+#: ui/Gabber_win.glade.h:5
+msgid "Browse Agents..."
+msgstr "Procurar Agentes..."
+
+#: ui/Gabber_win.glade.h:6
+msgid "E_xtended Away"
+msgstr "Ausência Prolongada"
+
+#: ui/Gabber_win.glade.h:8
+msgid "Hide _Agents"
+msgstr "Esconder _Agentes"
+
+#: ui/Gabber_win.glade.h:9
+msgid "Hide _Offline Contacts"
+msgstr "Esconder Contatos Desconectados"
+
+#: ui/Gabber_win.glade.h:10
+msgid "I'm _Back"
+msgstr "Voltei"
+
+#: ui/Gabber_win.glade.h:11
+msgid "Join Group Chat..."
+msgstr "Juntar-se a Conversa em Grupo"
+
+#: ui/Gabber_win.glade.h:12
+msgid "Log _out"
+msgstr ""
+
+#: ui/Gabber_win.glade.h:13
+msgid "_About"
+msgstr "Sobre"
+
+#: ui/Gabber_win.glade.h:14
+msgid "_Actions"
+msgstr "_Ações"
+
+#: ui/Gabber_win.glade.h:15
+msgid "_Available"
+msgstr "Disponível"
+
+#: ui/Gabber_win.glade.h:16
+msgid "_Busy"
+msgstr "Ocupado"
+
+#: ui/Gabber_win.glade.h:17
+msgid "_Connection Settings..."
+msgstr "_Configurações de Conexão..."
+
+#: ui/Gabber_win.glade.h:18
+msgid "_Contact List"
+msgstr "Lista de _Contatos"
+
+#: ui/Gabber_win.glade.h:19
+msgid "_Export Contact List..."
+msgstr "_Exportar Lista de Contatos..."
+
+#: ui/Gabber_win.glade.h:20
+msgid "_Free for Chat"
+msgstr "Livre para Conversa"
+
+#: ui/Gabber_win.glade.h:21
+msgid "_Gabber"
+msgstr "_Gabber"
+
+#: ui/Gabber_win.glade.h:22
+msgid "_Help"
+msgstr "Ajuda"
+
+#: ui/Gabber_win.glade.h:23
+msgid "_Import Contact List..."
+msgstr "_Importar Lista de Contatos..."
+
+#: ui/Gabber_win.glade.h:24
+msgid "_Invisible"
+msgstr "_Invisível"
+
+#: ui/Gabber_win.glade.h:25
+msgid "_Log in..."
+msgstr ""
+
+#: ui/Gabber_win.glade.h:26
+msgid "_My Information..."
+msgstr "_Minha Informação..."
+
+#: ui/Gabber_win.glade.h:27
+msgid "_Preferences..."
+msgstr "_Preferências..."
+
+#: ui/Gabber_win.glade.h:28
+msgid "_Quit"
+msgstr "Sair"
+
+#: ui/GChat_win.glade.h:2
+msgid "Group Chat"
+msgstr "Conversa em Grupo"
+
+#: ui/GChat_win.glade.h:3
+msgid "_Subject:"
+msgstr "Assunto:"
+
+#: ui/GCJoin_dlg.glade.h:1 ui/Login_dlg.glade.h:1 ui/MyInfo_dlg.glade.h:1
+#: ui/Prefs_win.glade.h:1 ui/ViewInfo_dlg.glade.h:1
+msgid "        "
+msgstr ""
+
+#: ui/GCJoin_dlg.glade.h:3
+msgid "<b>Advanced</b>"
+msgstr "<b>Avançado</b>"
+
+#: ui/GCJoin_dlg.glade.h:4
+msgid "Join Group Chat"
+msgstr "Juntar-se a Conversa em Grupo"
+
+#: ui/GCJoin_dlg.glade.h:5
+msgid "_Join Room"
+msgstr "Juntar-se a Sala"
+
+#: ui/GCJoin_dlg.glade.h:6 ui/MyInfo_dlg.glade.h:29
+msgid "_Nickname:"
+msgstr "Apelido:"
+
+#: ui/GCJoin_dlg.glade.h:8
+msgid "_Room:"
+msgstr "Sala:"
+
+#: ui/Login_dlg.glade.h:3
+msgid "<b>Account Actions</b>"
+msgstr "<b>Ações de Conta</b>"
+
+#: ui/Login_dlg.glade.h:4
+msgid "<b>Account Details</b>"
+msgstr "<b>Detalhes da Conta</b>"
+
+#: ui/Login_dlg.glade.h:5
+msgid "<b>Account Options</b>"
+msgstr "<b>Opções da Conta</b>"
+
+#: ui/Login_dlg.glade.h:6
+msgid "<b>Connection Options</b>"
+msgstr "<b>Opções da Conexão</b>"
+
+#: ui/Login_dlg.glade.h:7
+msgid "<b>Proxy Authentication</b>"
+msgstr "<b>Autenticação de Proxy</b>"
+
+#: ui/Login_dlg.glade.h:8
+msgid "<b>Proxy Location</b>"
+msgstr "<b>Localização do Proxy</b>"
+
+#: ui/Login_dlg.glade.h:9
+msgid "<b>Proxy Selection</b>"
+msgstr "<b>Seleção do Proxy</b>"
+
+#: ui/Login_dlg.glade.h:10
+msgid "Account"
+msgstr "Conta"
+
+#: ui/Login_dlg.glade.h:11
+msgid "Account Registration..."
+msgstr "Registro de Conta..."
+
+#: ui/Login_dlg.glade.h:12
+msgid "Automatically _connect on Gabber startup"
+msgstr "_Conectar automaticamente ao iniciar o Gabber"
+
+#: ui/Login_dlg.glade.h:13
+msgid "Automatically reconnect when _disconnected"
+msgstr "Reconectar automaticamente quando _desconectado"
+
+#: ui/Login_dlg.glade.h:14
+msgid "Change Password..."
+msgstr "Mudar Senha..."
+
+#: ui/Login_dlg.glade.h:15
+msgid "Connection"
+msgstr "Conexão"
+
+#: ui/Login_dlg.glade.h:16
+msgid "Do _not use a proxy to connect"
+msgstr "_Não usar um proxy para conectar"
+
+#: ui/Login_dlg.glade.h:17
+msgid "Gabber2"
+msgstr "Gabber2"
+
+#: ui/Login_dlg.glade.h:18
+msgid "Log In - Gabber"
+msgstr "Log In - Gabber"
+
+#: ui/Login_dlg.glade.h:19
+msgid "P_ort:"
+msgstr "P_orto:"
+
+#: ui/Login_dlg.glade.h:20
+msgid "Password:"
+msgstr "Senha:"
+
+#: ui/Login_dlg.glade.h:21
+msgid "Port:"
+msgstr "Porto:"
+
+#: ui/Login_dlg.glade.h:22
+msgid "Pr_iority:"
+msgstr "Pr_ioridade:"
+
+#: ui/Login_dlg.glade.h:23
+msgid "Proxy"
+msgstr "Proxy"
+
+#: ui/Login_dlg.glade.h:24
+msgid "Save password"
+msgstr "Salvar senha"
+
+#: ui/Login_dlg.glade.h:25
+msgid "Server:"
+msgstr "Servidor:"
+
+#: ui/Login_dlg.glade.h:26
+msgid "Use SOCKS version _4 to connect"
+msgstr "Usar SOCKS versão _4 para conectar"
+
+#: ui/Login_dlg.glade.h:27
+msgid "Use SOCKS version _5 to connect"
+msgstr "Usar SOCKS versão _5 para conectar"
+
+#: ui/Login_dlg.glade.h:28
+msgid "Use SSL _encrypted communication with the server"
+msgstr "Usar comunicação _encriptada SSL com o servidor"
+
+#: ui/Login_dlg.glade.h:29
+msgid "Use _HTTP proxy to connect"
+msgstr "Usar proxy _HTTP para conectar"
+
+#: ui/Login_dlg.glade.h:30
+msgid "Username:"
+msgstr "Nome de usuário:"
+
+#: ui/Login_dlg.glade.h:31
+msgid "_Log In"
+msgstr ""
+
+#: ui/Login_dlg.glade.h:32
+msgid "_Log Out"
+msgstr ""
+
+#: ui/Login_dlg.glade.h:34
+msgid "_Resource:"
+msgstr "_Recurso:"
+
+#: ui/Login_dlg.glade.h:35
+msgid "_Server:"
+msgstr "_Servidor:"
+
+#: ui/Login_dlg.glade.h:36
+msgid "_Username:"
+msgstr "Nome de _usuário:"
+
+#: ui/LogViewer_win.glade.h:1
+msgid "Logs for nickname"
+msgstr "Logs para apelido"
+
+#: ui/OOOChat_win.glade.h:4 ui/Prefs_win.glade.h:21
+msgid "History"
+msgstr "Histórico"
+
+#: ui/OOOChat_win.glade.h:5
+msgid "Send as Normal Message"
+msgstr "Enviar como Mensagem Normal"
+
+#: ui/OOOChat_win.glade.h:6
+msgid "View Contact Info"
+msgstr "Ver Informações do Contato"
+
+#: ui/OOOChat_win.glade.h:7
+msgid "View Contact Info..."
+msgstr "Ver informações do Contato..."
+
+#: ui/OOOChat_win.glade.h:8
+msgid "View Message History..."
+msgstr "Ver Histórico de Mensagens..."
+
+#: ui/MyInfo_dlg.glade.h:3 ui/ViewInfo_dlg.glade.h:6
+msgid "<b>Address</b>"
+msgstr "<b>Endereço</b>"
+
+#: ui/MyInfo_dlg.glade.h:4 ui/ViewInfo_dlg.glade.h:7
+msgid "<b>Birthday</b>"
+msgstr "<b>Aniversário</b>"
+
+#: ui/MyInfo_dlg.glade.h:5 ui/ViewInfo_dlg.glade.h:8
+msgid "<b>Computer</b>"
+msgstr "<b>Computador</b>"
+
+#: ui/MyInfo_dlg.glade.h:6 ui/ViewInfo_dlg.glade.h:9
+msgid "<b>Jabber Client</b>"
+msgstr "<b>Cliente Jabber</b>"
+
+#: ui/MyInfo_dlg.glade.h:7 ui/ViewInfo_dlg.glade.h:10
+msgid "<b>JabberID:</b>"
+msgstr "<b>ID Jabber:</b>"
+
+#: ui/MyInfo_dlg.glade.h:8 ui/ViewInfo_dlg.glade.h:11
+msgid "<b>Organization Details</b>"
+msgstr "<b>Detalhes da Organização</b>"
+
+#: ui/MyInfo_dlg.glade.h:9 ui/ViewInfo_dlg.glade.h:12
+msgid "<b>Personal Details</b>"
+msgstr "<b>Detalhes Pessoais</b>"
+
+#: ui/MyInfo_dlg.glade.h:10
+msgid "<b>_About</b>"
+msgstr "<b>Conta</b>"
+
+#: ui/MyInfo_dlg.glade.h:11 ui/ViewInfo_dlg.glade.h:14
+msgid "About"
+msgstr "Sobre"
+
+#: ui/MyInfo_dlg.glade.h:12 ui/ViewInfo_dlg.glade.h:20
+msgid "Client Info"
+msgstr "Informações do Cliente"
+
+#: ui/MyInfo_dlg.glade.h:13 ui/ViewInfo_dlg.glade.h:24
+msgid "General"
+msgstr "Geral"
+
+#: ui/MyInfo_dlg.glade.h:14 ui/ViewInfo_dlg.glade.h:27
+msgid "Location"
+msgstr "Localização"
+
+#: ui/MyInfo_dlg.glade.h:15
+msgid "My Information"
+msgstr "Minha Informação"
+
+#: ui/MyInfo_dlg.glade.h:16
+msgid "Na_me:"
+msgstr "No_me:"
+
+#: ui/MyInfo_dlg.glade.h:17 ui/ViewInfo_dlg.glade.h:28
+msgid "Name:"
+msgstr "Nome:"
+
+#: ui/MyInfo_dlg.glade.h:18 ui/ViewInfo_dlg.glade.h:32
+msgid "Operating System:"
+msgstr "Sistema Operaciona:"
+
+#: ui/MyInfo_dlg.glade.h:19 ui/ViewInfo_dlg.glade.h:33
+msgid "Organization"
+msgstr "Organização"
+
+#: ui/MyInfo_dlg.glade.h:20
+msgid "S_tate/Province:"
+msgstr "Es_tado/Província:"
+
+#: ui/MyInfo_dlg.glade.h:21
+msgid "Street _2:"
+msgstr "Rua _2:"
+
+#: ui/MyInfo_dlg.glade.h:22
+msgid "Te_lephone:"
+msgstr "Te_lefone:"
+
+#: ui/MyInfo_dlg.glade.h:23 ui/ViewInfo_dlg.glade.h:46
+msgid "Version:"
+msgstr "Versão:"
+
+#: ui/MyInfo_dlg.glade.h:24
+msgid "_Birthday:"
+msgstr "Aniversário:"
+
+#: ui/MyInfo_dlg.glade.h:25
+msgid "_City:"
+msgstr "_Cidade:"
+
+#: ui/MyInfo_dlg.glade.h:26
+msgid "_Country:"
+msgstr "País:"
+
+#: ui/MyInfo_dlg.glade.h:27
+msgid "_E-mail:"
+msgstr ""
+
+#: ui/MyInfo_dlg.glade.h:28
+msgid "_Full Name:"
+msgstr "Nome Completo:"
+
+#: ui/MyInfo_dlg.glade.h:30
+msgid "_Postal Code:"
+msgstr "Código Postal:"
+
+#: ui/MyInfo_dlg.glade.h:31
+msgid "_Role:"
+msgstr "Função:"
+
+#: ui/MyInfo_dlg.glade.h:32
+msgid "_Street:"
+msgstr "Rua:"
+
+#: ui/MyInfo_dlg.glade.h:33
+msgid "_Title:"
+msgstr "_Título:"
+
+#: ui/MyInfo_dlg.glade.h:34
+msgid "_Unit:"
+msgstr "_Unidade:"
+
+#: ui/MyInfo_dlg.glade.h:35
+msgid "_Update"
+msgstr "Atualizar"
+
+#: ui/MyInfo_dlg.glade.h:36
+msgid "_Web Site:"
+msgstr "Sítio Web:"
+
+#: ui/Prefs_win.glade.h:3
+msgid "<b>Automatic Presence Changing</b>"
+msgstr "<b>Mudança Automática de Presença</b>"
+
+#: ui/Prefs_win.glade.h:4
+msgid "<b>Automatic Presence Status</b>"
+msgstr "<b>Estado da Presença Automática</b>"
+
+#: ui/Prefs_win.glade.h:5
+msgid "<b>History Files</b>"
+msgstr "<b>Arquivos de Histórico</b>"
+
+#: ui/Prefs_win.glade.h:6
+msgid "<b>Message Types</b>"
+msgstr "<b>Tipos de Mensagens</b>"
+
+#: ui/Prefs_win.glade.h:7
+msgid "<b>Messages and Chats</b>"
+msgstr "<b>Conversas e Mensagens</b>"
+
+#: ui/Prefs_win.glade.h:8
+msgid "<b>Privacy</b>"
+msgstr "<b>Privacidade</b>"
+
+#: ui/Prefs_win.glade.h:9
+msgid ""
+"Allow others to see exactly how long I have been idle. This does not affect "
+"automatic presence changing."
+msgstr ""
+"Permitir que outros vejam exatamente há quanto tempo estou inativo. Isto não "
+"afeta mudança automática de presença."
+
+#: ui/Prefs_win.glade.h:10
+msgid "Allow others to see how long I've been idle"
+msgstr "Permitir que outros vejam há quanto tempo estou inativo"
+
+#: ui/Prefs_win.glade.h:11
+msgid "Auto-away"
+msgstr "Ausência automática"
+
+#: ui/Prefs_win.glade.h:12
+msgid "Automatically away"
+msgstr "Ausentar Automáticamente"
+
+#: ui/Prefs_win.glade.h:15
+msgid "Away after:"
+msgstr "Ausente depois de:"
+
+#: ui/Prefs_win.glade.h:18
+msgid "Delete all history files every month"
+msgstr "Remover todos arquivos de histórico todo mês"
+
+#: ui/Prefs_win.glade.h:19
+msgid "Extended Away after:"
+msgstr "Ausência prolongada depois de:"
+
+#: ui/Prefs_win.glade.h:20
+msgid "Gabber Preferences"
+msgstr "Preferências do Gabber"
+
+#: ui/Prefs_win.glade.h:22
+msgid "History Location:"
+msgstr "Localização do Histórico:"
+
+#: ui/Prefs_win.glade.h:23
+msgid "Interface"
+msgstr "Interface"
+
+#: ui/Prefs_win.glade.h:24
+msgid "Move the history files to a new subdirectory every month"
+msgstr "Mover arquivos de histórico para um novo subdiretório todo mês"
+
+#: ui/Prefs_win.glade.h:25
+msgid "Save history of chats and standalone messages"
+msgstr "Salvar histórico de conversas e mensagens isoladas"
+
+#: ui/Prefs_win.glade.h:26
+msgid "Save history of encrypted messages"
+msgstr "Salvar histórico de mensagens encriptadas"
+
+#: ui/Prefs_win.glade.h:27
+msgid "Save history of group chats"
+msgstr "Salvar histórico de conversas de grupo"
+
+#: ui/Prefs_win.glade.h:28
+msgid "Save history of headlines"
+msgstr "Salvar histórico de headlines"
+
+#: ui/Prefs_win.glade.h:30
+msgid "Status message:"
+msgstr "Mensagem de estado:"
+
+#: ui/Prefs_win.glade.h:31
+msgid "Suggest that messages be sent to another connection"
+msgstr "Sugerir que mensagens sejam enviadas para outra conexão"
+
+#: ui/Prefs_win.glade.h:32
+msgid "The history files themselves will be unencrypted"
+msgstr "Os arquivos de histórico não serão encriptados"
+
+#: ui/Prefs_win.glade.h:33
+msgid "minute(s)"
+msgstr "minuto(s)"
+
+#: ui/Prefs_win.glade.h:34
+msgid "minutes"
+msgstr "minutos"
+
+#: ui/Prefs_win.glade.h:35
+msgid "~/.Gabber/"
+msgstr ""
+
+#: ui/RawInput_dlg.glade.h:1
+msgid "Raw XML Input"
+msgstr "Entrada XML Crua"
+
+#: ui/RawInput_dlg.glade.h:3 ui/StandaloneMsgSend_dlg.glade.h:6
+msgid "_To:"
+msgstr "Para:"
+
+#: ui/RegisterGateway_dlg.glade.h:2
+msgid "By JabberID:"
+msgstr "Por JabberID:"
+
+#: ui/RegisterGateway_dlg.glade.h:5
+msgid "Register with a Gateway"
+msgstr "Registrar em um Gateway"
+
+#: ui/RegisterGateway_dlg.glade.h:6
+msgid ""
+"Register with a gateway to talk to people on other instant messaging "
+"systems.\n"
+"\n"
+"Select a gateway to register with:"
+msgstr ""
+"Registrar em um gateway para conversar com pessoar usando outro sistema de"
+"mensagens instantâneas.\n"
+"\n"
+"Selecione um gateway para se registrar:"
+
+#: ui/RegisterGateway_dlg.glade.h:9
+msgid "_Query"
+msgstr "Consultar"
+
+#: ui/RegisterGateway_dlg.glade.h:10
+msgid "_Register"
+msgstr "_Registrar"
+
+#: ui/Resources_dlg.glade.h:2
+#, no-c-format
+msgid ""
+"Gabber has detected that you are logged into <b>%s</b> multiple times. "
+"Before you logged in with Gabber, messages were going to the resource <b>%s</"
+"b>."
+msgstr ""
+"Gabber detectou que você está conectado em <b>%s</b> múltiplas vezes. "
+"Antes de você conectar com o Gabber, mensagens estavam indo para o recurso "
+"<b>%s</b>."
+
+
+#: ui/Resources_dlg.glade.h:3
+msgid "Messages should be _sent to:"
+msgstr "Mensagens devem ser enviadas para:"
+
+#: ui/Resources_dlg.glade.h:4
+msgid "Multiple Connections Detected"
+msgstr "Múltiplas Conexões Detectadas"
+
+#: ui/Resources_dlg.glade.h:5
+msgid "When I go _away:"
+msgstr "Quando eu me tornar _ausente:"
+
+#: ui/Resources_dlg.glade.h:7
+#, no-c-format
+msgid "keep messages coming to this connection (%s)"
+msgstr "mantenha mensagens vindo para esta conexão (%s)"
+
+#: ui/Resources_dlg.glade.h:9
+#, no-c-format
+msgid "send messages to the other resource (%s)"
+msgstr "envie mensagens para o outro recurso (%s)"
+
+#: ui/Resources_dlg.glade.h:11
+#, no-c-format
+msgid "the other resource (%s)"
+msgstr "o outro recurso (%s)"
+
+#: ui/Resources_dlg.glade.h:13
+#, no-c-format
+msgid "this connection in Gabber (%s)"
+msgstr "esta conexão no Gabber (%s)"
+
+#: ui/Roster_Action_menu.glade.h:1
+msgid "Add _Contact..."
+msgstr "Adicionar _Contato..."
+
+#: ui/Roster_Action_menu.glade.h:2
+msgid "_Join Group Chat..."
+msgstr "_Juntar-se a Conversa em Grupo..."
+
+#: ui/Roster_menu_user.glade.h:1
+msgid "Edit Groups..."
+msgstr "Editar Grupos..."
+
+#: ui/Roster_menu_user.glade.h:2
+msgid "Read History"
+msgstr "Ler Histórico"
+
+#: ui/Roster_menu_user.glade.h:3
+msgid "Remove"
+msgstr "Remover"
+
+#: ui/Roster_menu_user.glade.h:4
+msgid "Send File..."
+msgstr "Enviar Arquivo..."
+
+#: ui/Roster_menu_user.glade.h:5
+msgid "View Info"
+msgstr "Ver Informações"
+
+#: ui/S10nRequest_dlg.glade.h:3
+#, no-c-format
+msgid "<b>%s</b> would like to add you to their Contact List."
+msgstr "<b>%s</b> deseja adicioná-lo a sua Lista de Contatos."
+
+#: ui/S10nRequest_dlg.glade.h:4
+msgid "<b>Contact Information</b>"
+msgstr "<b>Informação de Contato</b>"
+
+#: ui/S10nRequest_dlg.glade.h:5
+msgid "<b>Request Reason</b>"
+msgstr "<b>Motivo do Pedido</b>"
+
+#: ui/S10nRequest_dlg.glade.h:7
+msgid "Add Contact to my Contact List"
+msgstr "Adicionar Contato a minha Lista de Contatos"
+
+#: ui/S10nRequest_dlg.glade.h:13
+msgid "Subscription Request"
+msgstr "Pedido de Assinatura"
+
+#: ui/S10nRequest_dlg.glade.h:14
+msgid "View _Info..."
+msgstr "Ver _Informação..."
+
+#: ui/S10nRequest_dlg.glade.h:15
+msgid "_Allow"
+msgstr "Permitir"
+
+#: ui/S10nRequest_dlg.glade.h:16
+msgid "_Deny"
+msgstr "Negar"
+
+#: ui/S10nRequest_dlg.glade.h:17
+msgid "_Display"
+msgstr "Mostrar"
+
+#: ui/StandaloneMsgRecv_dlg.glade.h:4
+msgid "Subject:"
+msgstr "Assunto:"
+
+#: ui/StandaloneMsgRecv_dlg.glade.h:6
+msgid "_Next"
+msgstr "Próximo"
+
+#: ui/StandaloneMsgRecv_dlg.glade.h:7
+msgid "_Previous"
+msgstr "Anterior"
+
+#: ui/StandaloneMsgRecv_dlg.glade.h:8
+msgid "_Reply..."
+msgstr "_responder..."
+
+#: ui/StandaloneMsgSend_dlg.glade.h:2
+msgid "S_ubject:"
+msgstr "Ass_unto:"
+
+#: ui/StandaloneMsgSend_dlg.glade.h:4
+#, no-c-format
+msgid "Send Message to %s"
+msgstr "Enviar Mensagem para %s"
+
+#: ui/Status_dlg.glade.h:1
+msgid "My Status"
+msgstr "Meu Estado"
+
+#: ui/Status_dlg.glade.h:2
+msgid "Priority:"
+msgstr "Prioridade:"
+
+#: ui/Status_dlg.glade.h:3
+msgid "Show as being:"
+msgstr "Mostrar como:"
+
+#: ui/Status_dlg.glade.h:4
+msgid "Status:"
+msgstr "Estado:"
+
+#: ui/ViewInfo_dlg.glade.h:5
+msgid "<b>About</b>"
+msgstr "<b>Sobre</b>"
+
+#: ui/ViewInfo_dlg.glade.h:13
+msgid "A subscription request has been sent. This contact has yet to respond."
+msgstr "Um pedido de assinatura foi enviado. Este contato precisa responder."
+
+#: ui/ViewInfo_dlg.glade.h:16
+msgid "Add this contact to your Contact List."
+msgstr "Adicionar este contato a sua Lista de Contatos."
+
+#: ui/ViewInfo_dlg.glade.h:17
+msgid "Birthday:"
+msgstr "Aniversário:"
+
+#: ui/ViewInfo_dlg.glade.h:18
+msgid "Capabilities:"
+msgstr "Capacidades:"
+
+#: ui/ViewInfo_dlg.glade.h:19
+msgid "City:"
+msgstr "Cidade:"
+
+#: ui/ViewInfo_dlg.glade.h:21
+msgid "Country:"
+msgstr "País:"
+
+#: ui/ViewInfo_dlg.glade.h:22
+msgid "E-mail:"
+msgstr ""
+
+#: ui/ViewInfo_dlg.glade.h:23
+msgid "Full Name:"
+msgstr "Nome Completo:"
+
+#: ui/ViewInfo_dlg.glade.h:29
+msgid "Neither of you can view the other's presence."
+msgstr "Nenhum de vocês pode ver a presença do outro."
+
+#: ui/ViewInfo_dlg.glade.h:30
+msgid "None:"
+msgstr "Nenhum:"
+
+#: ui/ViewInfo_dlg.glade.h:34
+msgid "Pending:"
+msgstr "Pendente:"
+
+#: ui/ViewInfo_dlg.glade.h:35
+msgid "Postal Code:"
+msgstr "Código Postal:"
+
+#: ui/ViewInfo_dlg.glade.h:36
+msgid "Request permission to view this contact's presence."
+msgstr "Pedir permissão para ver a presença deste contato."
+
+#: ui/ViewInfo_dlg.glade.h:37
+msgid "Role:"
+msgstr "Função:"
+
+#: ui/ViewInfo_dlg.glade.h:38
+msgid "State/Province:"
+msgstr "Estado/Província:"
+
+#: ui/ViewInfo_dlg.glade.h:39
+msgid "Street 2:"
+msgstr "Rua 2:"
+
+#: ui/ViewInfo_dlg.glade.h:40
+msgid "Street:"
+msgstr "Rua:"
+
+#: ui/ViewInfo_dlg.glade.h:41
+msgid "Subscribe"
+msgstr "Assinar"
+
+#: ui/ViewInfo_dlg.glade.h:42
+msgid "Telephone:"
+msgstr "Telefone:"
+
+#: ui/ViewInfo_dlg.glade.h:44
+msgid "Title:"
+msgstr "Título:"
+
+#: ui/ViewInfo_dlg.glade.h:45
+msgid "Unit:"
+msgstr "Unidade:"
+
+#: ui/ViewInfo_dlg.glade.h:47
+msgid "Web Site:"
+msgstr "Sítio Web:"
+
+#: ui/ViewInfo_dlg.glade.h:48
+msgid "_Display Name:"
+msgstr "Nome para Mostrar:"

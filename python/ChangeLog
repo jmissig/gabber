@@ -1,0 +1,49 @@
+2003-02-12  Thomas Muldowney <temas@jabber.org>
+
+    * GabberApp.py:  Don't load as much fluff for the resources
+    * PrettyJID.py:  DND support, and all around generally works
+    * RosterView.py: Don't change the jid on me
+    * Plugins/ChatView.py: DND hook, fires twice, not sure what's up still
+
+2003-02-11  Thomas Muldowney <temas@jabber.org>
+
+    * GabberApp.py:  Track some of the common resources
+    * RosterModel.py:  Use the resources from GabberApp
+    * PrettyJID.py:  Basic PrettyJID version
+    * Plugins/ChatView.py:  Use the PrettyJID widget
+
+2003-02-01  Thomas Muldowney <temas@jabber.org>
+
+    * GabberWin.py: attempt to make the menu have no relief, doesn't seem to
+                    work
+    * JabberConnection.py:  Browse before getting roster for checking type
+    * Popups.py: Be able to access individual items
+    * RosterModel.py: Lots of changes, user removal, <show/>
+    * RosterView.py: user removal
+
+2003-01-21  Thomas Muldowney <temas@jabber.org>
+
+    * RosterModel.py: show online only can be toggled and work properly
+
+2003-01-20  Thomas Muldowney <temas@jabber.org>
+
+    * GabberApp.py: Only pring send/recv in debug mode, s10n support
+    * GabberWin.py: Addjid dialog for s10n, better show online only support
+    * JabberConnection.py: version and time crash us right now, bit of cleanup
+                           for shutdown handling
+    * RosterModel.py: s10n support, only update the entire roster once
+    * RosterView.py: Correct exception type is fixed in JabberOO, better click
+                     handling
+    * TCPTransmitter.py: Cleanups
+
+2003-01-08  Thomas Muldowney <temas@jabber.org>
+
+    * RosterModel.py: All types are ready, online only view
+    * RosterView.py: Expand/Collapse groups, not popup chat
+
+2003-01-07  Thomas Muldowney <temas@jabber.org>
+
+    * Plugins/ChatViewManager.py: correct function definition
+    * Plugins/ChatView.py:  displayed event, shutdown properly
+    * Plugins/PlainTextView.py: composing events handled properly
+    * ChangeLog:  Seperate ChangeLog from the main gabber2 dir

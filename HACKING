@@ -1,0 +1,58 @@
+Tips for Hacking Gabber
+-----------------------
+or: How to modify Gabber and live to tell about it
+
+überheaders:
+    Please don't include one of the überheaders (<gtkmm.h>, <libgnomeuimm.h>)
+    directly in implementation files unless you really do need more than about
+    7 or 8 of the headers it includes. Definitely avoid doing so in header
+    files. It really does compile faster that way. Trust me.
+
+Beware the std::string:
+    If you're looking through the gtkmm2/gnomemm2 API (or header files) and you
+    see a widget taking in or spitting out a std::string instead of a
+    Glib::ustring, that means that it's probably not in UTF-8. You'll
+    definitely want to use Glib::locale_to_utf8 or Glib::locale_from_utf8.
+
+STL:
+    Gabber, jabberoo, libjudo, libsigc++, gtkmm, gnomemm, etc. all make use of 
+    C++'s Standard Template Library. There are tons of references and 
+    tutorials on the subject if you just search google. I prefer, as a 
+    reference, /The C++ Standard Template Library: A Tutorial and Reference/ 
+    by Nicolai M. Josuttis. Here are some important notes I've collected:
+	- When using iterators, use ++it over it++ when possible, because
+	  ++it is slightly faster on some compilers.
+	- The empty() member function is almost always preferred to comparing 
+	  size() == 0.
+	- Strings are cool ;) -- just be careful because some older STL 
+	  implementations don't like "" as much as string() -- use empty() 
+	  rather than comparing a string to ""
+
+Jabberoo/Gabber style:
+    K&R style. Private variables are prefixed with _. Usually Gabber variables
+    take the form _some_variable_name (_btn_OK, _entry_username, etc)
+    We generally make member functions protected rather than private.  Function
+    names are of the form someFunctionName(), although event handlers typically
+    follow the form on_signalName.  Use five *spaces* (no tabs) per indent.
+
+BaseGabberWindow
+    If you inherit from BaseGabberWindow and you override its close function,
+    then be *sure* to call BaseGabberWindow::close() in your new close 
+    function.
+
+Schemas:
+    If you add something to gabber.schemas.in, you'll need to install the
+    schemas file (so that Gabber will see the new defaults when you run it)
+    like so:
+    make
+    gconftool --install-schema-file="gabber.schemas"
+
+Looking for something to do?
+    Be sure to check the TODO file. Then check 
+    http://www.jabberstudio.org/projects/gabber/ for bugs, tasks, and 
+    feature requests. Then, if you're really bored, grep the source code
+    and the headers for "XXX" or "TODO". You should be able to find 
+    something somewhere. There's also HACKING.ideas
+
+If you feel like adding something, go ahead. If you're wrong I'll just change 
+it. :)

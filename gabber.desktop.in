@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Jabber Instant Messaging (Gabber)
+Comment=Interact with the Jabber instant messaging system
+Exec=gabber
+Terminal=false
+Type=Application
+Icon=gabber.png
+Categories=GTK;Application;Network;

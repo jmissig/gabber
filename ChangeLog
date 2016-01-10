@@ -1,0 +1,2350 @@
+2004-08-06  Julian Missig  <julian@jabber.org>
+
+	* po/pt_BR.po: Translation
+	* src/AddContactDlg.cc: Patch from goedson to fix compile issues
+	* src/FileTransferSendDlg.cc: same
+	* src/RegisterGateway.cc: same
+	* src/RosterController.cc: same 
+	* src/RosterModel.cc: same
+	* src/Singleton.hh: same
+	* src/TCPTransmitter.cc: same
+	* src/gtkspell.c: (build_suggestion_menu),
+	(gtkspell_set_language_internal): same
+	* src/main.cc: same
+
+2004-06-30  Julian Missig  <julian@jabber.org>
+
+	* po/LINGUAS: New translation
+	* po/it.po: same
+	* po/pt_BR.po: same
+
+2004-06-28  Julian Missig  <julian@jabber.org>
+
+	* README: fixed typo
+	* src/Makefile.am: proper flags
+	* src/S10nRequestDlg.cc: Fixed bug with denying s10n requests
+	* src/linux/Makefile.am: proper flags
+
+2004-06-22  Julian Missig  <julian@jabber.org>
+
+	* src/BaseGabberWindow.cc: Ok so this stuff is really broken
+	* src/BaseGabberWindow.hh: same
+	* src/modules/ChatViewManager.hh: same
+	* src/modules/GCViewManager.hh: same
+
+2004-06-21  Julian Missig  <julian@jabber.org>
+
+	* src/BaseGabberWindow.cc: Really fix issues this time. I hope.
+
+2004-06-20  Julian Missig  <julian@jabber.org>
+
+	* src/PlainTextView.cc: Fix scrolling issue with gtkmm 2.4
+	* src/PlainTextView.hh: same
+
+2004-06-19  Julian Missig  <julian@jabber.org>
+
+	* Makefile.am: fix make dist
+	* src/BaseGabberWindow.cc: fix a crash! yey
+	* src/GabberWin.cc: temas might want some credit
+	* src/PlainTextView.cc: identify /where/ to fix the scroll bug
+
+2004-06-18  Julian Missig  <julian@jabber.org>
+
+	* src/GabberUtility.cc: Patch from goedson to fix naming conflict
+	* src/GabberUtility.hh: same
+
+2004-06-17  Julian Missig  <julian@jabber.org>
+
+	* acinclude.m4: get rid of gtkmm here
+	* configure.ac: fix the checks -- it's gconfmm
+	* src/ContactInfo.cc: change messagedialog structure
+	* src/GabberApp.cc: same
+	* src/GabberUtility.cc: same
+	* src/GabberUtility.hh: same
+	* src/RosterView.cc: same
+	* src/linux/Makefile.am: include DEPS_CFLAGS
+	* src/linux/StatusIcon.cc: SigC::
+	* src/modules/ChatView.cc: MessageDialog
+	* src/modules/GCView.cc: MessageDialog
+	* src/modules/RawInputDlg.cc: SigC::
+	* src/modules/RawViewManager.hh: SigC::
+	* src/osx/Makefile.am: include DEPS_CFLAGS
+	* src/win32/Makefile.am: same
+
+2004-06-17  Thomas Muldowney <temas@jabber.org>
+
+	* RosterController.cc:  TreeModel::iterator doesn't seem to wrap as
+        expected.
+	* RosterController.hh:  same
+	* GabberDialog.cc:  use build_filename
+
+2004-06-17  Julian Missig  <julian@jabber.org>
+
+	* src/osx/PlatformFuncs.cc: Finally got that symbol
+
+2004-06-17  Julian Missig  <julian@jabber.org>
+
+	* src/osx/Makefile.am: Fix more platform stuff temas broke
+	* src/osx/PlatformFuncs.cc: same
+	* src/osx/StatusIcon.cc: same
+	* src/osx/StatusIcon.hh: same
+
+2004-06-16  Julian Missig  <julian@jabber.org>
+
+	* gabber.schemas.in: new gconf keys
+	* src/BaseGabberWindow.cc: use the keys
+	* src/ConfigPaths.hh: temas made them
+	* src/GabberDialog.cc: don't blame me
+	* src/LogManager.cc: yeah
+	* src/Menus.cc: . 
+	* src/ModuleManager.cc: .
+	* src/ResourceManager.cc: .
+
+2004-06-16  Julian Missig  <julian@jabber.org>
+
+	reviewed by: <delete if not using a buddy>
+
+	* gabber.schemas.in:
+	* src/BaseGabberWindow.cc:
+	* src/ConfigPaths.hh:
+	* src/GabberDialog.cc:
+	* src/LogManager.cc:
+	* src/Menus.cc:
+	* src/ModuleManager.cc:
+	* src/ResourceManager.cc:
+
+2004-06-16  Thomas Muldowney <temas@jabber.org>
+
+	* src/GabberUtility.cc:  new MessageDialogWrapper
+	* src/GabberUtility.hh:  same
+	* src/ContactInfo.cc:  Use the new MessageDialog wrapper
+	* src/GabberApp.cc:  same
+	* src/modules/ChatView.cc:  same
+	* src/modules/GCView.cc:  same
+	* src/modules/StandaloneSendDlg.cc:  same
+	* src/RosterView.cc:  same
+	* src/JabberConnection.cc:  need some function definitions
+	* src/PlainTextView.cc:  Fix the #ifdef and use the config.h
+	* src/PlainTextView.hh:  same
+	* src/RosterController.cc:  same
+	* src/TextParser.cc:  same
+	* src/Makefile.am:  Remove StatusIcon stuff
+
+2004-06-16  Julian Missig  <julian@jabber.org>
+
+	* acinclude.m4: ApplicationServices for OS X
+	* configure.ac: output platform
+	* src/AutoAway.cc: Platform-specific
+	* src/AutoAway.hh: same
+	* src/linux/PlatformFuncs.cc: move XSS here
+	* src/linux/PlatformFuncs.hh: same
+	* src/osx/Makefile.am: Use OS X's hidden API for idle time
+	* src/osx/PlatformFuncs.cc: same
+	* src/osx/PlatformFuncs.hh: same
+	* src/win32/PlatformFuncs.cc: Use the windows API for idle
+	* src/win32/PlatformFuncs.hh: same
+
+2004-06-16  Thomas Muldowney <temas@jabber.org>
+
+	* configure.ac:  Check for gtkmm 2.4 or 2.0
+	* src/RosterController.hh:  Fixed the #if to #ifdef
+	* src/modules/ChatView.cc:  interface is not intrface for win32
+
+2004-06-16  Julian Missig  <julian@jabber.org>
+
+	* Makefile.am: clean up /some/ of temas's mess
+	* acinclude.m4: same
+	* configure.ac: same
+	* src/BaseGabberWindow.hh: raise shouldn't be virtual
+	* src/Makefile.am: temas
+	* src/eggtrayicon.h: temas
+	* src/linux/Makefile.am: temas
+
+2004-06-16  Thomas Muldowney <temas@jabber.org>
+
+	* src/AddContactDlg.cc:  Update for win32, sigc 2.0, gtkmm 2.4
+	* src/AutoAway.cc:  same
+	* src/AutoAway.hh:  same
+	* src/AvatarManager.cc:  same
+	* src/BaseGabberWindow.cc:  same
+	* src/BaseGabberWindow.hh:  same
+	* src/ConfigPaths.hh:  same
+	* src/ContactInfo.cc:  same
+	* src/Environment.hh:  same
+	* src/FileTransferManager.cc:  same
+	* src/FileTransferRecvDlg.cc:  same
+	* src/FileTransferSendDlg.cc:  same
+	* src/GabberApp.cc:  same
+	* src/GabberDialog.cc:  same
+	* src/GabberDialog.hh:  same
+	* src/GabberUtility.cc:  same
+	* src/GabberWidgets.cc:  same
+	* src/GabberWin.cc:  same
+	* src/GroupsEditor.cc:  same
+	* src/JabberConnection.cc:  same
+	* src/JabberConnection.hh:  same
+	* src/LogManager.cc:  same
+	* src/LogViewer.cc:  same
+	* src/Menus.cc:  same
+	* src/ModuleManager.cc:  same
+	* src/ModuleManager.hh:  same
+	* src/PacketQueue.cc:  same
+	* src/PlainTextView.cc:  same
+	* src/PlainTextView.hh:  same
+	* src/PrefsInterface.cc:  same
+	* src/RegisterGateway.cc:  same
+	* src/RegisterGateway.hh:  same
+	* src/ResourceManager.cc:  same
+	* src/RosterController.cc:  same
+	* src/RosterController.hh:  same
+	* src/RosterModel.hh:  same
+	* src/RosterView.cc:  same
+	* src/S10nRequestDlg.cc:  same
+	* src/S5B.cc:  same
+	* src/TCPTransmitter.cc:  same
+	* src/TCPTransmitter.hh:  same
+	* src/TextParser.cc:  same
+	* src/TextParser.hh:  same
+	* src/XPathLog.cc:  same
+	* src/eggtrayicon.c:  same
+	* src/eggtrayicon.h:  same
+	* src/gtkspell.c:  same
+	* src/intl.h:  same
+	* src/main.cc:  same
+	* src/linux/Makefile.am:  same
+	* src/modules/ChatView.cc:  same
+	* src/modules/ChatViewManager.cc:  same
+	* src/modules/GCJoinDlg.cc:  same
+	* src/modules/GCView.cc:  same
+	* src/modules/GCViewManager.cc:  same
+	* src/modules/StandaloneSendDlg.cc:  same
+	* src/modules/StandaloneViewManager.cc:  same
+	* src/win32/Makefile.am:  same
+	* src/win32/PlatformFuncs.hh:  same
+	* src/win32/Win32Configurator.cc:  same
+	* src/win32/Win32Configurator.hh:  same
+
+2004-06-12  Julian Missig  <julian@jabber.org>
+
+	* configure.ac: 1.9.4.1
+	* src/GabberApp.cc: Use GabberDialog for password/unsubscribed dialogs
+	* src/GabberDialog.cc: Fresh New Easy-to-Use dialog class! woo
+	* src/GabberDialog.hh: same
+	* src/Makefile.am: same
+	* ui/Gabber_win.glade: Glade definitions of password/unsubscribed
+
+2004-06-11  Julian Missig  <julian@jabber.org>
+
+	* src/GabberWidgets.cc: Make links actually clickable
+	* src/GabberWidgets.hh: same
+
+2004-06-11  Julian Missig  <julian@jabber.org>
+
+	* configure.ac: 1.9.4!
+	* src/AddContactDlg.cc: remove some debugging code
+	* ui/GCJoin_dlg.glade: remove useless stuff
+	* ui/ViewInfo_dlg.glade: same
+
+2004-06-11  Thomas Muldowney <temas@jabber.org>
+
+    * src/RosterController.cc:  Make the queue icon go away when it's read.
+
+2004-06-06  Julian Missig  <julian@jabber.org>
+
+	* ui/ViewInfo_dlg.glade: Start re-arranging presence info
+
+2004-06-05  Kenny Graunke  <kenny@whitecape.org>
+
+	* autogen.sh: require automake 1.6, as 1.4 doesn't work anymore
+
+2004-06-05  Julian Missig  <julian@jabber.org>
+
+	* src/GabberWidgets.cc: Finally fix x:oob support
+	* src/GabberWidgets.hh: i think
+
+2004-06-04  Julian Missig  <julian@jabber.org>
+
+	* Makefile.am: Add intltool compatibility. Yey
+	* autogen.sh: same
+	* configure.ac: Move to a newer autoconf style and such
+	* configure.in: same
+	* gabber.desktop.in: translation
+	* po/.cvsignore: intltool compatibility
+	* po/LINGUAS: same
+	* po/Makevars: same
+	* po/POTFILES.in: same
+	* src/GabberWin.cc: Translator credits
+	* src/Makefile.am: remove DISABLE_DEPRECATED. Little chance of that now
+	* src/modules/Makefile.am: same
+
+2004-06-02  Julian Missig  <julian@jabber.org>
+
+	* src/modules/StandaloneView.cc: Hopefully fix a crash
+
+2004-06-01  Thomas Muldowney <temas@jabber.org>
+
+    * src/GabberApp.cc:  use the new discoDB signal.
+    * src/RegisterGateway.cc:  Use a ref instead of a copy
+
+2004-05-30  Julian Missig  <julian@jabber.org>
+
+	* src/FileTransferManager.cc: note for temas
+	* src/StatusIcon.cc: re-enable message notification
+
+2004-05-29  Julian Missig  <julian@jabber.org>
+
+	* src/GabberWidgets.cc: PrettyURI widget
+	* src/GabberWidgets.hh: same
+	* src/modules/StandaloneView.cc: use PrettyURI
+
+2004-05-29  Julian Missig  <julian@jabber.org>
+
+	* src/GabberUtility.cc: openuri function moved here
+	* src/GabberUtility.hh: same
+	* src/RegisterGateway.cc: small fix (?)
+	* src/TextParser.cc: use Util::'s openuri
+	* src/fwd.h: add Gtk::Table
+	* src/modules/StandaloneView.cc: first-try x:oob support
+	* src/modules/StandaloneView.hh: same
+	* src/modules/StandaloneViewManager.hh: same
+	* ui/StandaloneMsgRecv_dlg.glade: same
+
+2004-05-29  Julian Missig  <julian@jabber.org>
+
+	* src/AddContactDlg.cc: Correctly handle gateway registration
+	* src/GabberApp.cc: count jabber:iq:register as an "agent"
+	* src/RegisterGateway.cc: same
+	* src/RegisterGateway.hh: same
+
+2004-05-28  Julian Missig  <julian@jabber.org>
+
+	* src/RegisterGateway.cc: fix kenny's fix
+
+2004-05-28  Kenny Graunke  <kenny@whitecape.org>
+
+	* src/RegisterGateway.cc: fix compilation error...
+
+2004-05-28  Julian Missig  <julian@jabber.org>
+
+	* src/ContactInfo.cc: Added group chat capabilities
+	* src/RegisterGateway.cc: basic registration! kinda!
+	* src/RegisterGateway.hh: same
+	* src/fwd.h: same
+	* ui/RegisterGateway_dlg.glade: same
+
+2004-05-27  Julian Missig  <julian@jabber.org>
+
+	* src/AddContactDlg.cc: Fixed a crash when closing the dialog
+	* src/AddContactDlg.hh: same
+	* src/ContactInfo.cc: "Transfer" not "Trasnfer"!
+	* src/RegisterGateway.cc: Fixed a potential crash related to above
+	* src/RegisterGateway.hh: same
+
+2004-05-25  Julian Missig  <julian@jabber.org>
+
+	* ui/GChat_win.glade: slightly fixed window
+
+2004-05-22  Julian Missig  <julian@jabber.org>
+
+	* src/ContactInfo.cc: Display some basic client capabilities
+	* src/ContactInfo.hh: same
+	* src/GabberApp.cc: report more of our supported disco features
+	* ui/ViewInfo_dlg.glade: Display some basic client capabilities
+
+2004-05-22  Julian Missig  <julian@jabber.org>
+
+	* gabber.schemas.in: Added values for contact list window size, pos
+	* src/AddContactDlg.cc: Working on register gateway
+	* src/AddContactDlg.hh: same
+	* src/ConfigPaths.hh: contact list window size, pos
+	* src/GabberApp.cc: Disco stuff for register gateway
+	* src/GabberWin.cc: contact list window size, pos saving
+	* src/JabberConnection.cc: disco stuff for register gateway
+	* src/JabberConnection.hh: same
+	* src/Makefile.am: added register gateway
+	* src/RegisterGateway.cc: beginnings of a register gateway dialog
+	* src/RegisterGateway.hh: same
+	* ui/Makefile.am: same
+	* ui/RegisterGateway_dlg.glade: same
+
+2004-05-18  Thomas Muldowney <temas@box5.net>
+
+	* src/PubSubNode.cc:  Beginning of the impl for pubsub nodes
+	* src/PubSubNode.hh:  same
+	* src/AvatarManager.cc:  Start of the avatar manager, pending some pubsub
+		issues.
+	* src/AvatarManager.hh:  same
+	* src/osx:  The OSX platform.
+	* acinclude.m4:  same
+    * src/main.cc:  Use the startup and shutdown as defined by the platform
+
+2004-05-10  Thomas Muldowney <temas@box5.net>
+	
+	* src/GabberApp.cc:  Cleanup the handling of shutdowns
+	* src/RosterModel.cc:  Correctly clear the node map, return after adding and
+		removing a node.
+	* src/RosterController.cc:  Fixes for the fading handling.
+
+2004-05-04  Thomas Muldowney <temas@box5.net>
+
+	* src/RosterModel.[cc|hh]:  New design with a generic roster model class
+	* src/RosterController.[cc|hh]: same
+
+2004-05-03  Kenny Graunke  <kenny@whitecape.org>
+
+	* src/RosterModel.hh: include jabberoo/JID.hh, not jid.hh
+
+2004-04-22  Julian Missig  <julian@jabber.org>
+
+	* acinclude.m4: Silly temas. He didn't even include a ChangeLog entry
+
+2004-02-27  Julian Missig  <julian@jabber.org>
+
+	* src/GabberApp.cc: Clear the list of gateways/agents on disconnect
+	* src/GabberApp.hh: same
+
+2004-02-19  Thomas Muldowney <temas@jabber.org>
+
+    * src/PlainTextView.cc:  /me commands need to be faded.
+
+2004-02-12  Thomas Muldowney <temas@jabber.org>
+
+    * src/RosterModel.cc:  Only update the rows after we've fixed up the model
+    * ui/GChat_win.glade:  Don't force the position of the user sidebar, seems
+        to potentially cause a Gtk lockup, and looks weird.
+
+2004-02-04  Kenny Graunke  <kenny@whitecape.org>
+
+	* ui/Gabber_win.glade: Ctrl+Q = Quit
+
+2004-02-04  Thomas Muldowney <temas@jabber.org>
+
+    * src/RosterModel.cc:  WIP fixes for disabling group view
+
+2004-02-03  Julian Missig  <julian@jabber.org>
+
+	* ui/OOOChat_win.glade: Moved status to the top of chatview
+
+2004-02-03  Julian Missig  <julian@jabber.org>
+
+	* src/modules/ChatView.cc: Disable text input on disconnect
+	* src/modules/ChatView.hh: same
+
+2004-02-01  Thomas Muldowney <temas@jabber.org>
+
+    * src/LogManager.cc:  Make sure we properly rebuild the log path
+        after rotating.
+    * src/LogManager.hh:  same
+
+2004-01-31  Thomas Muldowney <temas@jabber.org>
+
+    * src/ConfigPaths.hh:  Last rotation times and moved logs.  Julian
+        add these to the default schemas.
+    * src/GabberApp.cc:  Little bit of reodering
+    * src/GabberApp.hh:  same
+    * src/GabberUtility.cc:  timestamp building and parsing.  Will
+        probably encapsulate this in a class later.
+    * src/GabberUtility.hh:  same
+    * src/LogManager.cc:  Move old logs into new dirs, log to the month dir
+    * src/LogManager.hh:  same
+    * src/LogViewer.cc:  Understand month dirs.
+    * src/LogViewer.hh:  same
+    * src/PlainTextView.cc:  Smarter timestamping, clearing, fun stuff
+    * src/PlainTextView.hh:  same
+    * src/PrettyText.hh:  same
+    * src/XPathLog.cc:  We have to stamp here sometimes because jabberoo
+        sucks a bit.  It'd be too hard to fix jabberoo right now.
+    * src/modules/ChatView.cc:  Load previously 10 seen msgs.
+    * ui/LogViewer_win.glade:  Month selector, tiny bit of padding.
+
+2004-01-29  Julian Missig  <julian@jabber.org>
+
+	* ui/FTSend_dlg.glade: Slight UI fix
+	* ui/GChat_win.glade: Slight UI fix
+
+2004-01-29  Julian Missig  <julian@jabber.org>
+
+	* NEWS: Patch from Luke Renn <Luke.Renn@drexel.edu> to fix gcjoin dlg cancellation
+	* src/modules/GCJoinDlg.cc: same
+	* src/modules/GCJoinDlg.hh: same
+	* src/modules/GCViewManager.cc: same
+	* src/modules/GCViewManager.hh: same
+
+2004-01-26  Julian Missig  <julian@jabber.org>
+
+	* src/FileTransferSendDlg.cc: Select resource for file transfer
+	* src/FileTransferSendDlg.hh: same
+	* src/ResourceManager.hh: #include <map>
+	* ui/FTTransfer_dlg.glade: Centered label = bad
+	* ui/LogViewer_win.glade: Set default size
+
+2004-01-25  Thomas Muldowney <temas@jabber.org>
+
+    * src/PlainTextView.cc:  All timestamping is controlled here now
+    * src/PlainTextView.hh:  timestamp vars and functions
+    * src/PrettyText.hh:  same
+    * src/modules/ChatView.cc:  Removed timestamping control
+    * src/modules/ChatView.hh:  same
+
+2004-01-23  Thomas Muldowney <temas@jabber.org>
+
+    * src/PlainTextView.cc:  remove_timestamp function, kind of broken
+    * src/PlainTextView.hh:  same
+    * src/PrettyText.hh:  same
+    * src/RosterModel.cc:  Unselect the JID if it goes offline
+    * src/modules/ChatView.cc:  smarter timestamps
+    * src/modules/ChatView.hh:  same
+
+2004-01-23  Julian Missig  <julian@jabber.org>
+
+	* ui/GChat_win.glade: Auto-resize input here too
+	* ui/MyInfo_dlg.glade: Lots of text view entry spacing/sizing changes
+	* ui/OOOChat_win.glade: same
+	* ui/StandaloneMsgRecv_dlg.glade: same
+	* ui/StandaloneMsgSend_dlg.glade: same
+	* ui/ViewInfo_dlg.glade: same
+
+2004-01-23  Julian Missig  <julian@jabber.org>
+
+	* configure.in: upped
+	* src/modules/ChatView.cc: Add a "*" to the window title when messages are unviewed
+	* src/modules/ChatView.hh: same
+
+2004-01-23  Thomas Muldowney <temas@jabber.org>
+
+    * src/modules/ChatView.cc:  Remove the pango extents madness
+    * src/modules/ChatView.hh:  same
+    * ui/OOOChat_win.glade:  Learned a bit from gossip and removed the glade
+        height settings so we auto resize the text entry area.  No more vpane.
+
+2004-01-23  Thomas Muldowney <temas@jabber.org>
+
+    * src/PlainTextView.cc:  Better behaved when resizing the window.
+    * src/PlainTextView.hh:  same
+
+2004-01-22  Julian Missig  <julian@jabber.org>
+
+	* NEWS: 1.9.3
+	* configure.in: 1.9.3
+
+2004-01-22  Thomas Muldowney <temas@jabber.org>
+
+    * src/ContactInfo.cc:  Use the new jid-equals xpath function
+    * src/GabberUtility.hh:  Moved the utility functions into here
+    * src/RosterModel.hh:  use the JID comparison
+    * src/modules/ChatView.cc:  Use the new jid-equals xpath function
+    * src/modules/ChatViewManager.hh:  use the JID comparison
+
+2004-01-22  Thomas Muldowney <temas@jabber.org>
+
+    * src/RosterView.cc:  Ensure we pull up the correct jid for right clicks
+    * src/RosterView.hh:  Remove all the now unused variables
+    * src/StatusIcon.cc:  Fixed cleanup, make sure we only show the first icon
+    * src/StatusIcon.hh:  same
+
+2004-01-21  Julian Missig  <julian@jabber.org>
+
+	* src/PrefsInterface.cc: Set connection settings dialog title properly
+
+2004-01-21  Julian Missig  <julian@jabber.org>
+
+	* src/GabberWidgets.cc: Add : only when necessary
+	* src/PacketQueue.hh: empty()
+	* src/StatusIcon.cc: Message Queue tray
+	* src/StatusIcon.hh: Message Queue tray
+
+2004-01-20  Thomas Muldowney <temas@jabber.org>
+
+    * src/GabberWin.cc:  Default to the proper hiding mode
+    * src/RosterModel.cc:  Fixes for when hide offline is off at start, roster
+        icons now fade in with the text.  Offline users are now lighter than
+        online users when hide offline is off.
+    * src/RosterModel.hh:  same
+    * src/RosterView.cc:  Base color is what we want rather than bg.
+
+2004-01-16  Thomas Muldowney <temas@jabber.org>
+
+    * src/GabberApp.cc:  Roster properly maintains itself now
+    * src/GabberWin.cc:  clear the roster on disconnects
+    * src/GabberWin.hh:  clear_roster was stupid, gone
+    * src/PrefsInterface.cc:  Put the manage back in, it's needed
+    * src/RosterModel.cc:  Properly handle disconnections and clears
+    * src/RosterView.cc:  removed stupid debug that's been in there forever
+    * src/modules/ChatView.cc:  Fix a potential crash, and make sure the
+        presence query is always correct.
+
+2004-01-16  Thomas Muldowney <temas@jabber.org>
+
+    * src/LogManager.cc:  Method to get a logs location
+    * src/LogManager.hh:  same
+    * src/LogViewer.cc:  First pass logviewer.
+    * src/LogViewer.hh:  same
+    * src/Makefile.am:  Build the log viewer
+    * src/Menus.cc:  Don't unref the xml object.  Causes stuff to go away before
+        it should
+    * src/PrefsInterface.cc:  Only manage when we have a true parent.
+    * src/RosterView.cc:  Remove some debug, hookup the log viewer
+    * src/RosterView.hh:  read log menu callback
+    * src/modules/ChatView.cc:  Fixes for outgoing logs
+    * ui/LogViewer_win.glade:  Basic logviewer UI.  I'm sure it'll change.
+    * ui/Makefile.am:  Install the UI
+
+2004-01-13  Thomas Muldowney <temas@jabber.org>
+
+    * src/GabberApp.cc:  Use the queue flushing event to show s10n requests
+    * src/GabberApp.hh:  same
+    * src/PacketQueue.cc:  queue flushing event, reworked how pops work
+    * src/PacketQueue.hh:  same
+    * src/PacketQueueView.cc:  Internal tracking of number of visible rows
+    * src/PacketQueueView.hh:  same
+    * src/RosterModel.cc:  Removed extraneous debug info
+    * src/modules/ChatViewManager.cc:  Use the queue flushing
+    * src/modules/ChatViewManager.hh:  same
+    * src/modules/StandaloneViewManager.cc:  same
+    * src/modules/StandaloneViewManager.hh:  same
+
+2004-01-09  Thomas Muldowney <temas@jabber.org>
+
+    * src/PacketQueueView.cc:  Properly handle the queue changed event so we
+        show the first icon only.
+    * src/RosterModel.cc: same
+    * src/RosterModel.hh: same
+
+2004-01-09  Julian Missig  <julian@jabber.org>
+
+	* pixmaps/Makefile.am: queuing for s10n and standalone
+	* src/GabberApp.cc: same
+	* src/RosterModel.cc: same
+	* src/modules/ChatViewManager.cc: same
+	* src/modules/StandaloneView.cc: same
+	* src/modules/StandaloneView.hh: same
+	* src/modules/StandaloneViewManager.cc: same
+
+2004-01-08  Thomas Muldowney <temas@jabber.org>
+
+    * src/GabberWin.cc: clear the packet view when we log out
+    * src/PacketQueue.cc: fixed removing entries from the ordered queue
+    * src/PacketQueueView.cc: clear functionality, hooked to change event
+    * src/PacketQueueView.hh: same
+    * src/RosterModel.cc: hooked up to the changed event and handle icons from
+        the queue
+    * src/RosterModel.hh: same
+    * src/modules/ChatView.cc: properly iterate the queue
+
+2004-01-08  Julian Missig  <julian@jabber.org>
+
+	* src/GabberApp.cc: Fix issue with password dialog
+	* src/JabberConnection.cc: same
+
+2004-01-08  Julian Missig  <julian@jabber.org>
+
+	* src/ContactInfo.cc: only display "Update" button after vCard is downloaded
+
+2004-01-08  Julian Missig  <julian@jabber.org>
+
+	* src/GabberWin.cc: open messages on set_back
+	* src/PacketQueue.hh: change comments slightly (for docs)
+
+2004-01-08  Thomas Muldowney <temas@jabber.org>
+
+    * src/PacketQueue.cc:  New iterator interface, maintains overall order,
+        event for when the ordered queue changes, queued items get an icon
+    * src/PacketQueue.hh:  same
+    * src/PacketQueueView.cc:  Update to new interfaces
+    * src/PacketQueueView.hh: same
+    * src/RosterModel.cc:  same
+    * src/RosterModel.hh:  same
+    * src/modules/ChatView.cc:  same
+    * src/modules/ChatViewManager.cc:  same
+
+2004-01-07  Julian Missig  <julian@jabber.org>
+
+	* gabber.schemas.in: Hide Offline key
+	* src/ConfigPaths.hh: same
+	* src/GabberApp.cc: autoconnect
+	* src/GabberApp.hh: same
+	* src/GabberWin.cc: clear_roster
+	* src/GabberWin.hh: same
+
+2004-01-07  Julian Missig  <julian@jabber.org>
+
+	* src/GabberWin.cc: Implement the autodisplay preference
+	* src/JabberConnection.cc: get_my_presence()
+	* src/JabberConnection.hh: same
+	* src/modules/ChatViewManager.cc: Implement the autodisplay preference
+
+2004-01-07  Thomas Muldowney <temas@jabber.org>
+
+    * src/PacketQueue.cc: Stupid me, element has an empty() call
+    * src/RosterModel.cc: Use the default theme colors
+    * src/RosterModel.hh: same
+    * src/RosterView.cc: same
+
+2004-01-07  Julian Missig  <julian@jabber.org>
+
+	* configure.in: Upped version, added flag for gtkspell
+	* gabber.schemas.in: added keys for spellcheck pref and queue pref
+	* src/ConfigPaths.hh: same
+	* src/GabberWin.cc: clear roster on disconnect, not only on logout
+	* src/Makefile.am: conditionally compile gtkspell
+	* src/PacketQueueView.cc: Make it Pretty!
+	* src/PrefsInterface.cc: preferences for spelling and queuing
+	* src/PrefsInterface.hh: same
+	* src/modules/ChatView.cc: conditional gtkspell
+	* src/modules/GCView.cc: same
+	* src/modules/StandaloneSendDlg.cc: same
+	* ui/Gabber_win.glade: enable Connection Settings dialog
+	* ui/Login_dlg.glade: same
+	* ui/Prefs_win.glade: preferences for spelling and queuing
+
+2004-01-06  Thomas Muldowney <temas@jabber.org>
+
+    * src/GabberWin.cc: Create the Packet Queue View "Incoming Messages"
+    * src/GabberWin.hh: same
+    * src/JabberConnection.cc:  Load the current packet queue from disk
+    * src/Makefile.am:  Build the PQV
+    * src/PacketQueue.cc:  Reworked much of the internal order of events
+    * src/RosterModel.cc:  Actually process the roster after we're connected.
+        Better interaction with the queue.  Make sure we have the roster item
+        before processing it.  Other small fixes.
+    * src/fwd.h:  New classes defined
+    * src/modules/ChatView.cc:  Pull out all our msgs from the queue
+    * src/modules/ChatViewManager.cc:  Use the packet queue
+    * ui/Gabber_win.glade:  Add the "Incoming Messages" view
+
+2004-01-06  Julian Missig  <julian@jabber.org>
+
+	* src/ContactInfo.cc: URL parsing in Contact Info About message
+	* src/modules/RawInputDlg.cc: server label
+
+2004-01-05  Julian Missig  <julian@jabber.org>
+
+	* configure.in: Upped version
+	* src/ContactInfo.cc: Edit My Information
+	* src/ContactInfo.hh: same
+	* src/GabberWin.cc: same
+	* ui/Gabber_win.glade: same
+	* ui/Makefile.am: same
+	* ui/MyInfo_dlg.glade: same
+	* ui/Roster_Action_menu.glade: No more Add Group
+
+2004-01-05  Thomas Muldowney <temas@jabber.org>
+
+    * src/RosterModel.cc: Roster updates properly on presence changes.
+
+2004-01-05  Julian Missig  <julian@jabber.org>
+
+	* src/TextParser.cc: URLs -> purple after clicked
+	* src/TextParser.hh: same
+
+2004-01-04  Julian Missig  <julian@jabber.org>
+
+	* README: Talk about Raw XML Input
+	* src/modules/GCView.cc: Don't display private messages
+	* src/modules/Makefile.am: Raw XML Input
+	* src/modules/RawInputDlg.cc: same
+	* src/modules/RawInputDlg.hh: same
+	* src/modules/RawViewManager.cc: same
+	* src/modules/RawViewManager.hh: same
+	* ui/Makefile.am: same
+	* ui/RawInput_dlg.glade: same
+
+2004-01-02  Julian Missig  <julian@jabber.org>
+
+	* gabber.desktop.in: Fixed Gabber menu entry. Thanks Goedson.
+
+2004-01-02  Julian Missig  <julian@jabber.org>
+
+	* src/S10nRequestDlg.cc: Fix a crash. Sorry Ralph
+
+2004-01-01  Julian Missig  <julian@jabber.org>
+
+	* src/Menus.cc: Fixed a bug viewing info for agents
+
+2003-12-31  Kenny Graunke  <kenny@whitecape.org>
+
+	* src/GabberWidgets.cc: it's _jid not jid, julian :D
+	* src/modules/GCView.cc: set window title
+
+2004-01-01  Julian Missig  <julian@jabber.org>
+
+	* src/GabberWin.cc: Display online/offline messages more sanely
+
+2003-12-31  Kenny Graunke  <kenny@whitecape.org>
+
+	* src/modules/GCView.cc: No PrettyJID for you
+	* src/modules/GCView.hh: same
+	* ui/GChat_win.glade: same
+
+2003-12-31  Julian Missig  <julian@jabber.org>
+
+	* NEWS: 1.9.2
+	* configure.in: same
+	* src/GabberWidgets.cc: same
+	* src/RosterView.cc: same
+	* src/modules/ChatView.cc: same
+	* src/modules/ChatViewManager.cc: same
+
+2003-12-31  Julian Missig  <julian@jabber.org>
+
+	* src/GabberWin.cc: Patch for About dialog from Goedson Teixeira Paixao <goedson@debian.org>
+
+2003-12-31  Julian Missig  <julian@jabber.org>
+
+	* src/Makefile.am: Moved the URI/Smiley parser into its own class
+	* src/PlainTextView.cc: same
+	* src/PlainTextView.hh: same
+	* src/modules/StandaloneView.cc: same
+	* src/modules/StandaloneView.hh: same
+
+2003-12-31  Julian Missig  <julian@jabber.org>
+
+	* configure.in: Upped version
+	* src/PlainTextView.cc: URL parsing. You heard me right
+	* src/PlainTextView.hh: same
+	* ui/Makefile.am: Mock-up for a dialog we'll use later
+	* ui/Resources_dlg.glade: same
+
+2003-12-30  Thomas Muldowney <temas@jabber.org>
+
+    * src/GabberWin.cc:  clear the roster before the underlying data is gone
+    * src/JabberConnection.cc:  queue is explicitly used now
+    * src/JabberConnection.hh:  access to the queue
+    * src/PacketQueue.cc:  The packet queue in all its regal glory, bow down
+    * src/PacketQueue.hh:  Same, plus docu, go me
+    * src/RosterModel.cc:  Basic interaction with the queue
+    * src/RosterModel.hh:  Some more info items related to the queue
+    * src/RosterView.cc:  Pop queue packets if they are waiting.
+    * src/modules/ChatViewManager.cc:  Use the queue as a demonstration
+
+2003-12-17  Thomas Muldowney <temas@jabber.org>
+
+    * src/FileTransferDlg.cc:  Hide the details expander until started.
+    * src/JabberConnection.cc:  Create and delete the PacketQueue
+    * src/JabberConnection.hh:  same
+    * ui/FTTransfer_dlg.glade:  Default the details expander to not visible.
+
+2003-12-15  Julian Missig  <julian@jabber.org>
+
+	* src/PrettyText.hh: include changes. Compiles on FreeBSD.
+	* src/RosterModel.hh: same
+	* src/S5B.cc: same
+	* src/modules/ChatView.hh: same
+
+2003-12-15  Thomas Muldowney <temas@jabber.org>
+
+    * src/S5B.[cc|hh]:  proxy support
+    * src/TCPTransmitter.cc:  When using a proxy, don't say we're connected
+                              until the proxy handshaking has completed.
+
+2003-12-15  Julian Missig  <julian@jabber.org>
+
+	* src/AgentsWindow.cc: No more agents window
+	* src/AgentsWindow.hh: same
+	* src/GabberWin.cc: same
+	* src/GabberWin.hh: same
+	* src/Makefile.am: same
+	* src/PlainTextView.cc: same
+	* src/RosterView.cc: same
+	* ui/Agents_win.glade: same
+	* ui/Makefile.am: same
+	* ui/Roster_Action_menu.glade: same
+
+2003-12-14  Thomas Muldowney <temas@jabber.org>
+
+    * src/FileTransferDlg.cc:  Only show the progress bar when we're actually
+                               transferring.
+    * src/FileTransferManager.[cc|hh]:  Proxy support.
+    * src/FileTransferSendDlg.[cc|hh]:  Proxy support.
+    * src/S5B.[cc|hh]:  Ability to add more streamhosts.
+
+2003-12-13  Julian Missig  <julian@jabber.org>
+
+	* NEWS: basic spell-checking support via gtkspell
+	* configure.in: same
+	* src/GabberWidgets.cc: same
+	* src/Makefile.am: same
+	* src/modules/ChatView.cc: same
+	* src/modules/GCView.cc: same
+	* src/modules/StandaloneSendDlg.cc: same
+
+2003-12-13  Julian Missig  <julian@jabber.org>
+
+	* src/modules/ChatViewManager.cc: present chat windows if already open
+
+2003-12-13  Julian Missig  <julian@jabber.org>
+
+	* src/GabberWidgets.cc: PrettyJID now has a right-click menu!
+	* src/GabberWidgets.hh: same
+	* src/Menus.cc: same
+	* src/Menus.hh: same
+	* src/RosterView.cc: same
+	* src/RosterView.hh: same
+	* src/modules/ChatViewManager.cc: same
+
+2003-12-12  Julian Missig  <julian@jabber.org>
+
+	* src/GroupsEditor.cc: remove Unfiled group
+	* src/modules/GCJoinDlg.cc: new group chat join dialog
+	* src/modules/GCJoinDlg.hh: same
+	* ui/GCJoin_dlg.glade: same
+
+2003-12-12  Thomas Muldowney <temas@jabber.org>
+
+    * src/RosterModel.hh: If nicknames will potentially collide, fallback to
+                          sorting by jid.
+    * src/RosterModel.cc: Few cleanups, remove debug.
+
+2003-12-12  Julian Missig  <julian@jabber.org>
+
+	* src/modules/GCView.cc: Fixed groupchat. dunno how that broke
+
+2003-12-11  Thomas Muldowney <temas@jabber.org>
+
+    * src/RosterModel.cc:  Don't return in get_iter if it's actually invalid.
+
+2003-12-09  Julian Missig  <julian@jabber.org>
+
+	* src/S10nRequestDlg.cc: Don't assume we accepted if we didn't reject.
+
+2003-12-01  Julian Missig  <julian@jabber.org>
+
+	* configure.in: upped version
+	* src/ContactInfo.cc: size group... please work? no? ok, fine.
+	* src/GroupsEditor.cc: Basic group editing like Gabber 1
+	* src/GroupsEditor.hh: same
+	* src/Makefile.am: same
+	* src/RosterView.cc: same
+	* src/RosterView.hh: same
+	* ui/EditGroups_dlg.glade: same
+	* ui/Makefile.am: same
+	* ui/Roster_menu_user.glade: same
+
+2003-11-24  Julian Missig  <julian@jabber.org>
+
+	* src/AddContactDlg.cc: Add roster items properly
+	* src/S10nRequestDlg.cc: same
+
+2003-11-21  Julian Missig  <julian@jabber.org>
+
+	* gabber.schemas.in: Save group chat join nick
+	* src/ConfigPaths.hh: same
+	* src/modules/GCJoinDlg.cc: same
+	* src/modules/GCJoinDlg.hh: same
+	* ui/Roster_menu_user.glade: Change order of items in rt-click menu
+
+2003-11-17  Thomas Muldowney <temas@jabber.org>
+
+    * src/GabberApp.cc:  init _winMain to NULL so we can check it clearly
+
+2003-11-17  Julian Missig  <julian@jabber.org>
+
+	* gabber.schemas.in: Place connect options under account
+
+2003-11-15  Julian Missig  <julian@jabber.org>
+
+	* configure.in: Fix check for GLIB_MUTEX
+
+2003-10-29  Thomas Muldowney <temas@jabber.org>
+
+    * gabber.schemas.in:  Added the closed groups key
+    * src/ConfigPaths.hh:  same
+    * src/Configurator.hh:  const list
+    * src/GabberApp.cc:  actually clean up before killing the signal loop
+    * src/GabberWin.cc:  Don't immediately close the window
+    * src/RosterModel.cc:  debug for a possible bug scenario
+    * src/RosterView.cc:  Remember collapsed groups
+    * src/RosterView.hh:  same
+    * src/main.cc:  properly destroy everything
+    * src/linux/GConfConfigurator.cc:  Fixes for saving string lists, constness
+    * src/linux/GConfConfigurator.hh:  same
+
+2003-10-26  Julian Missig  <julian@jabber.org>
+
+	* src/Makefile.am: Cleaning up temas's mess
+	* src/linux/Makefile.am: same
+	* src/win32/Makefile.am: same
+	* ui/FTSend_dlg.glade: no gnome
+	* ui/FTTransfer_dlg.glade: same
+	* ui/GCJoin_dlg.glade: same 
+	* ui/OOOChat_win.glade: same
+	* ui/Prefs_win.glade: same
+	* ui/Roster_Action_menu.glade: same
+	* ui/Roster_menu_user.glade: same
+	* ui/S10nRequest_dlg.glade: same
+	* ui/StandaloneMsgSend_dlg.glade: same
+	* ui/ViewInfo_dlg.glade: same
+
+2003-10-22  Thomas Muldowney <temas@jabber.org>
+
+    * configure.in:  Respect passed in flags.
+    * src/FileTransferDlg.cc:  Cleanups and fixes
+    * src/FileTransferDlg.hh:  same
+    * src/FileTransferManager.cc:  same
+    * src/FileTransferManager.hh:  same
+    * src/TCPTransmitter.cc:  Too much debug
+
+2003-10-17  Julian Missig  <julian@jabber.org>
+
+	* src/AddContactDlg.cc: Yummy yummy gateway support
+	* src/AddContactDlg.hh: same
+	* ui/AddContact_dlg.glade: same
+	* ui/Gabber_win.glade: same
+
+2003-10-01  Thomas Muldowney <temas@jabber.org>
+
+    * src/GabberApp.cc:  use the passed in password
+    * src/JabberConnection.hh:  same
+    * src/PrefsInterface.cc:  store password works properly
+
+2003-09-17  Thomas Muldowney <temas@jabber.org>
+
+    * src/StatusIcon.cc:  StatusIcon.hh already includes eggtrayicon.h
+    * src/XPathLog.cc:  Can now hand it msgs to check, needed for initial msgs
+    * src/XPathLog.hh:  same
+    * src/modules/ChatView.cc:  Logging fixes, better handling of close checks
+    * src/modules/ChatView.hh:  same
+    * src/modules/StandaloneView.cc:  Logs properly
+
+2003-09-13  Julian Missig  <julian@jabber.org>
+
+	* src/GabberWin.cc: Patch from Antoine Busch <amx@free.fr>
+	* src/GabberWin.hh: same
+	* src/JabberConnection.cc: additional debug messages from me
+
+2003-09-08  Julian Missig  <julian@jabber.org>
+
+	* src/GabberApp.cc: More status icon work
+	* src/GabberWin.cc: same
+	* src/GabberWin.hh: same
+	* src/StatusIcon.cc: same
+	* src/StatusIcon.hh: same
+
+2003-09-08  Julian Missig  <julian@jabber.org>
+
+	* src/GabberApp.cc: Theoretically we have a Status Icon now
+	* src/GabberApp.hh: but I'm having no luck...
+	* src/Makefile.am: I dunno...
+	* src/StatusIcon.cc: same
+	* src/StatusIcon.hh: same
+	* src/modules/ChatView.cc: same
+	* ui/Gabber_win.glade: same
+	* ui/Roster_menu_user.glade: same
+
+2003-08-22  Julian Missig  <julian@jabber.org>
+
+	* src/GabberWin.cc: Basic about dialog. I'm lazy.
+	* src/GabberWin.hh: same
+	* ui/Gabber_win.glade: same
+
+2003-08-20  Julian Missig  <julian@jabber.org>
+
+	* src/GabberApp.cc: Fix bug with manage() of error dialogs
+
+2003-08-20  Thomas Muldowney <temas@jabber.org>
+
+    * src/AddContactDlg.cc:  JIDList moved to a helper namespace
+    * src/AgentsWindow.cc:  Print out a bit more info on items
+    * src/GabberApp.cc:  Removed disco filtering, handle the signal for new
+                         items and filter locally.
+    * src/GabberApp.hh:  same
+    * src/GabberUtility.hh:  added JIDList typedef
+    * ui/Makefile.am:  Install the _kick ass_ agents view
+
+2003-08-20  Thomas Muldowney <temas@jabber.org>
+
+    * src/RosterModel.cc:  Fade in people that have just logged in
+    * src/RosterModel.hh:  values for the fades
+    * src/RosterView.cc:  Tell the model the default colors
+
+2003-08-19  Thomas Muldowney <temas@jabber.org>
+
+    * src/FTProfile.cc: description support
+    * src/FileTransferDlg.cc:  Lots of cleanups, purely a view
+    * src/FileTransferDlg.hh:  same
+    * src/FileTransferManager.cc:  Better handling when stopping a transfer
+    * src/FileTransferManager.hh:  same
+    * src/FileTransferRecvDlg.cc:  nicer view of the incoming file
+    * src/FileTransferRecvDlg.hh:  same
+    * src/FileTransferSendDlg.cc:  give the manager the file info
+    * src/GabberApp.cc:  Use the new receive dialog
+    * src/Makefile.am:  build the recv dialog
+    * src/TCPTransmitter.cc:  Remove some extraneous debug
+
+2003-08-19  Kenny Graunke  <kenny@whitecape.org>
+
+	* src/MessageViews.hh: Removed from CVS. Doesn't seem to be used.
+
+2003-08-18  Thomas Muldowney <temas@jabber.org>
+
+    * src/RosterModel.cc:  Fixes for when changes occur to single items
+    * src/RosterModel.hh:  same
+
+2003-08-11  Julian Missig  <julian@jabber.org>
+
+	* gabber.schemas.in: Default to jabber.org
+	* src/GabberWidgets.cc: Remove <b> from label
+	* src/GabberWin.cc: Actions menu
+	* src/GabberWin.hh: same
+	* src/Menus.cc: same
+	* src/Menus.hh: same
+	* src/PrefsInterface.cc: Auto-away prefs
+	* src/PrefsInterface.hh: same
+	* src/modules/StandaloneSendDlg.cc: Add menu item for New Message
+	* src/modules/StandaloneViewManager.cc: also handle 'headline' messages
+	* src/modules/StandaloneViewManager.hh: same
+	* ui/Gabber_win.glade: Actions menu
+	* ui/Prefs_win.glade: Preferences window
+
+2003-08-07  Julian Missig  <julian@jabber.org>
+
+	* src/AutoAway.cc: Fix spin on auto-away. I hope.
+
+2003-08-07  Kenny Graunke  <kenny@whitecape.org>
+
+        Scrolling changes per feature request #1979. Please see comments there
+	on why the glade changes are necessary.
+
+	* src/PlainTextView.cc:
+	* src/PlainTextView.hh:
+	* ui/OOOChat_win.glade:
+
+2003-08-05  Kenny Graunke  <kenny@whitecape.org>
+
+	* ui/S10nRequest_dlg.glade: rename Choose... to Choose_menuitem,
+	to match the code in S10nRequestDlg.cc. Fixes a segfault when choosing
+	anything from the menu of things you can display in the contact list.
+
+2003-08-05  Julian Missig  <julian@jabber.org>
+
+	* ui/Makefile.am: Prefs win glade file
+	* ui/Prefs_win.glade: same
+
+2003-08-04  Julian Missig  <julian@jabber.org>
+
+	* src/GabberApp.cc: unsubscribed.. todo
+	* src/GabberApp.hh: same
+	* src/GabberWin.cc: Some UI modifications
+	* src/PlainTextView.cc: No more italic actions
+	* src/fwd.h: Add Frame
+	* ui/Gabber_win.glade: some UI modifications
+
+2003-08-04  Julian Missig  <julian@jabber.org>
+
+	* src/S10nRequestDlg.cc: This is pretty much done. Untested, though
+	* src/S10nRequestDlg.hh: same
+	* ui/S10nRequest_dlg.glade: same
+
+2003-08-04  Julian Missig  <julian@jabber.org>
+
+	* src/GabberApp.cc: Yey for handling authorization errors
+	* src/GabberApp.hh: Yey!
+
+2003-08-04  Julian Missig  <julian@jabber.org>
+
+	* configure.in: Checks for XScreenSaver Extension
+	* gabber.schemas.in: clarify english
+	* src/AddContactDlg.cc: working toward im system select
+	* src/AddContactDlg.hh: same
+	* src/AutoAway.cc: Auto-away support
+	* src/AutoAway.hh: same
+	* src/ConfigPaths.hh: same
+	* src/GabberApp.cc: same
+	* src/GabberApp.hh: same
+	* src/GabberWin.cc: same
+	* src/Makefile.am: Auto-away support
+	* ui/Roster_menu_user.glade: ...
+
+2003-08-03  Thomas Muldowney <temas@jabber.org>
+
+    * doxygen.cfg.in: More tweaks for some purtyness
+    * src/FileTransferDlg.cc:  Purely a listener now
+    * src/FileTransferDlg.hh:  same
+    * src/GabberApp.cc:  Use the file transfer manager
+    * src/GabberApp.hh:  same
+    * src/GabberUtility.cc:  integer to string helper
+    * src/GabberUtility.hh:  same
+    * src/Makefile.am:  build the new file transfer stuff
+    * src/RosterView.cc:  Send files hook up
+    * src/RosterView.hh:  same
+    * src/S5B.cc:  Filled in more..
+    * src/S5B.hh:  same
+    * src/Stream.hh:  same
+    * src/TCPTransmitter.cc:  I hate you.
+    * src/TCPTransmitter.hh:  you too.
+    * src/fwd.h:  added FileTransferManager
+    * ui/FTSend_dlg.glade:  small tweaks
+    * ui/Roster_menu_user.glade:  same
+    * Initial landing of file transfer support, many new classes and what not.
+
+2003-08-03  Julian Missig  <julian@jabber.org>
+
+	* gabber.schemas.in: Added keys for autoaway
+	* src/GabberWin.cc: Now using Glib::signal_timeout() for the status msgs
+	* ui/AddContact_dlg.glade: preparation for agents
+	* ui/FTRecv_dlg.glade: File Receive Dialog
+
+2003-07-21  Julian Missig  <julian@jabber.org>
+
+	* src/GabberWin.cc: Less ugly, but resize bug.. stupid label
+	* src/GabberWin.hh: same
+	* ui/Gabber_win.glade: same
+
+2003-07-15  Julian Missig  <julian@jabber.org>
+
+	* src/GabberWin.cc: Fewer bugs in status picker, but uglier. I'll make it look better later.. tired...
+	* src/GabberWin.hh: same
+	* ui/Gabber_win.glade: same
+
+2003-07-15  Julian Missig  <julian@jabber.org>
+
+	* src/GabberWin.cc: Status picker doesn't suck so much anymore. Really.
+	* src/GabberWin.hh: same
+	* ui/Gabber_win.glade: same
+
+2003-07-14  Thomas Muldowney <temas@jabber.org>
+
+    * src/GabberApp.cc:  SI hooked in
+    * src/GabberApp.hh:  same
+    * src/Makefile.am:  Build all the file transfer fun
+    * src/S5B.cc:  S5B recv impl
+    * src/S5B.hh:  same
+    * src/FileTransferDlg.cc:  File transfer dialog
+    * src/FileTransferDlg.hh:  same
+    * ui/FTTransfer_dlg.glade:  Some mods and missing things
+    * ui/Makefile.am:  Install the transfer dialog
+
+2003-07-14  Julian Missig  <julian@jabber.org>
+
+	* src/ContactInfo.cc: Presence and idle time display in the contact info dlg. Fun!
+	* src/ContactInfo.hh: same
+	* ui/ViewInfo_dlg.glade: same
+
+2003-07-14  Julian Missig  <julian@jabber.org>
+
+	* ui/FTSend_dlg.glade: Basic send dialog. needs more love later.
+	* ui/FTTransfer_dlg.glade: uh, I dunno
+
+2003-07-13  Julian Missig  <julian@jabber.org>
+
+	* ui/FTTransfer_dlg.glade: Gabber 1's FT Transfer dialog, redone for gtk2. There will probably be changes to this in the future, it's just easiest to be exactly the same for now.
+
+2003-07-13  Julian Missig  <julian@jabber.org>
+
+	* src/ContactInfo.cc: I implemented support for changing nicknames/display names to the view info dialog. You'll need a newer Jabberoo. Also note that making use of this feature will severely mess up your Contact List until you restart Gabber. Go bugs!
+	* src/ContactInfo.hh: same
+	* src/GabberWidgets.cc: same
+	* src/GabberWidgets.hh: same
+	* ui/ViewInfo_dlg.glade: same
+
+2003-07-12  Julian Missig  <julian@jabber.org>
+
+	* configure.in: SSL fixes
+	* src/modules/GCView.cc: ESC button support
+	* src/modules/GCView.hh: same
+	* src/modules/StandaloneSendDlg.cc: Enter works properly. Oops.
+	* ui/Gabber_win.glade: No "Roster"--bad word!
+
+2003-07-10  Thomas Muldowney <temas@jabber.org>
+
+    * configure.in:  platform selection
+    * src/GabberApp.cc:  Have a configurator instance, fill in the connection
+        info after login dialog is done.
+    * src/GabberApp.hh:  configurator instance and accessor
+    * src/JabberConnection.cc:  Use the connection_info rather than the
+        configurator directly.
+    * src/JabberConnection.hh:  same
+    * src/Makefile.am:  Build the configurator
+    * src/ModuleManager.cc:  No more configwrapper, use the Configurator
+    * src/ModuleManager.hh:  same
+    * src/PrefsInterface.cc:  same
+    * src/PrefsInterface.hh:  same
+
+2003-07-09  Thomas Muldowney <temas@jabber.org>
+
+    * src/GabberApp.cc:  getSingleton impl for module issues
+    * src/GabberApp.hh:  same
+    * src/LogManager.hh:  Not a singleton
+    * src/modules/StandaloneSendDlg.cc:  Temporarily disable logging, will move
+        to XPathLogs
+
+2003-07-07  Thomas Muldowney <temas@jabber.org>
+
+    * TODO:  Put all the entries on JS
+    * src/GabberApp.cc:  Renamed plugin manager to module manager.
+    * src/GabberApp.hh:  same, log manager access
+    * src/LogManager.cc: create_xpath_log function to create XPathLog
+    * src/LogManager.hh: same
+    * src/Makefile.am:  new files added
+    * src/PlainTextView.cc:  implemented append_error, and some buffer mark
+        updates
+    * src/PlainTextView.hh:  append_error decl
+    * src/PluginManager.cc:  Renamed to ModuleManager.cc
+    * src/PluginManager.hh:  Renamed to ModuleManager.hh
+    * src/PrettyText.hh:  Error output
+    * src/modules/ChatView.cc:  Removed tons of commented out junk, use the
+        XPathLogs.  double message display problem fixed.
+    * src/modules/ChatView.hh:  same
+    * src/modules/ChatViewManager.cc:  Use BaseModule, mostly testing still
+    * src/modules/ChatViewManager.hh:  same
+
+2003-06-19  Julian Missig  <julian@jabber.org>
+
+	* src/GabberUtility.cc: Added lookup_nickname function
+	* src/GabberUtility.hh: same
+	* src/GabberWin.cc: Basic usage of the status bar
+	* src/GabberWin.hh: same
+
+2003-06-19  Julian Missig  <julian@jabber.org>
+
+	* configure.in: Include SESSION_DEBUG if --enable-debug is chosen
+	* src/Makefile.am: -DOPENSSL_NO_KRB5 we don't use kerberos, thanks.
+	* src/modules/ChatView.cc: Properly update on any message changes
+	* src/modules/ChatView.hh: same
+	* src/modules/StandaloneSendDlg.cc: same
+	* src/modules/StandaloneSendDlg.hh: same
+
+2003-06-19  Thomas Muldowney <temas@jabber.org>
+
+    * src/SSLAdapter.cc: Compilation fixes
+    * src/SSLAdapter.hh: same
+    * src/TCPTransmitter.hh: same
+
+2003-06-18  James Widman  <james@jwidman.com>
+
+    * src/fwd.h: Added forward declarations
+    * src/AddContactDlg.cc: cleaned up #includes
+    * src/AddContactDlg.hh: same
+    * src/AgentsWindow.cc: same
+    * src/AgentsWindow.hh: same
+    * src/BaseGabberWindow.cc: same
+    * src/BaseGabberWindow.hh: same
+    * src/ContactInfo.cc: same
+    * src/ContactInfo.hh: same
+    * src/GabberApp.cc: same
+    * src/GabberApp.hh: same
+    * src/GabberUtility.cc: same
+    * src/GabberUtility.hh: same
+    * src/GabberWidgets.cc: same
+    * src/GabberWidgets.hh: same
+    * src/GabberWin.cc: same
+    * src/GabberWin.hh: same
+    * src/LogManager.cc: same
+    * src/Menus.cc: same
+    * src/PlainTextView.cc: same
+    * src/PlainTextView.hh: same
+    * src/PluginManager.cc: same
+    * src/PluginManager.hh: same
+    * src/PrefsInterface.cc: same
+    * src/PrefsInterface.hh: same
+    * src/PrettyText.hh: same
+    * src/RosterModel.cc: same
+    * src/RosterModel.hh: same
+    * src/RosterView.cc: same
+    * src/RosterView.hh: same
+    * src/S10nRequestDlg.cc: same
+    * src/S10nRequestDlg.hh: same
+    * src/TCPTransmitter.cc: same
+    * src/TCPTransmitter.hh: same
+    * src/modules/ChatView.cc: same
+    * src/modules/ChatView.hh: same
+    * src/modules/ChatViewManager.cc: same
+    * src/modules/ChatViewManager.hh: same
+    * src/modules/GCJoinDlg.cc: same
+    * src/modules/GCJoinDlg.hh: same
+    * src/modules/GCView.cc: same
+    * src/modules/GCView.hh: same
+    * src/modules/StandaloneSendDlg.cc: same
+    * src/modules/StandaloneSendDlg.hh: same
+    * src/modules/StandaloneView.cc: same
+    * src/modules/StandaloneView.hh: same
+    * src/modules/StandaloneViewManager.cc: same
+    * src/modules/StandaloneViewManager.hh: same
+
+2003-06-18  Thomas Muldowney <temas@jabber.org>
+
+    * src/AddContactDlg.cc: Compiler warning cleanups
+    * src/BaseGabberWindow.cc: same
+    * src/BaseGabberWindow.hh: same
+    * src/ContactInfo.cc: same
+    * src/PlainTextView.cc: same
+    * src/RosterModel.cc: same
+    * src/RosterView.cc: same 
+    * src/S10nRequestDlg.cc: same
+    * src/TCPTransmitter.cc: same
+    * src/modules/ChatView.cc: same
+    * src/modules/StandaloneSendDlg.cc: same
+
+2003-06-15  James Widman  <james@jwidman.com>
+
+    * configure.in:  Every compile done with "-Wall"
+    * src/ContactInfo.cc: changes to compile with jabberoo (mostly
+       s/Element/judo::Element, etc.)
+    * src/RosterModel.hh: same
+    * src/modules/ChatView.cc: same
+    * src/modules/ChatView.hh: same
+    * src/modules/ChatViewManager.cc: same
+    * src/modules/ChatViewManager.hh: same
+    * src/modules/StandaloneView.hh: same
+    * src/modules/StandaloneViewManager.cc: same
+    * src/modules/StandaloneViewManager.hh: same
+
+    
+2003-06-13  Julian Missig  <julian@jabber.org>
+
+	* src/PrefsInterface.cc: Allow gabber to actually run..
+	* src/TCPTransmitter.cc: define _( )
+	
+2003-06-12  Thomas Muldowney <temas@jabber.org>
+
+    * configure.in: SSL checks
+    * src/ConfigPaths.hh: New paths for connection options
+    * src/JabberConnection.cc:  Use the new options
+    * src/LogManager.cc:  help some compilations?
+    * src/Makefile.am:  SSL Sources
+    * src/PrefsInterface.cc:  New connection options, actually respect the save
+        password option.
+    * src/PrefsInterface.hh:  same
+    * src/TCPTransmitter.cc:  Not having SSL but requesting it is a major error
+    * src/modules/ChatView.cc:  Cheat our time so we can immediately close it
+
+2003-06-11  Julian Missig  <julian@jabber.org>
+
+	* gabber.schemas.in: Added additional keys for log in dialog
+	* ui/Login_dlg.glade: slight UI changes
+	* ui/StandaloneMsgRecv_dlg.glade: slight UI changes
+
+2003-06-11  Julian Missig  <julian@jabber.org>
+
+	* bootstrap: bye-bye bootstrap
+	* configure.in: Upped version for CVS
+	* src/GabberUtility.cc: Glib::ustring
+	* src/GabberUtility.hh: same
+	* src/GabberWin.cc: slight modifications to status
+	* src/modules/ChatView.cc: same
+	* src/modules/GCView.cc: same
+	* ui/GChat_win.glade: some UI changes
+	* ui/Gabber_win.glade: UI changes to status area
+	* ui/Login_dlg.glade: finished UI for login dlg mostly
+
+2003-06-10  Julian Missig  <julian@jabber.org>
+
+	* AUTHORS: Updated for 1.9.0
+	* Makefile.am: same
+	* NEWS: same
+	* README: same
+	* configure.in: same
+
+2003-06-10  Julian Missig  <julian@jabber.org>
+
+	* src/ContactInfo.cc: Minor fix
+	* src/modules/ChatView.cc: Remember thread
+	* src/modules/ChatView.hh: same
+	* src/modules/Makefile.am: Standalone send dlg
+	* src/modules/StandaloneSendDlg.cc: same
+	* src/modules/StandaloneSendDlg.hh: same
+	* src/modules/StandaloneView.cc: same
+	* src/modules/StandaloneViewManager.cc: same
+	* ui/Gabber_win.glade: Hide unused options
+	* ui/Makefile.am: standalone send dlg
+	* ui/Roster_menu_user.glade: hide unused options
+	* ui/StandaloneMsgRecv_dlg.glade: default size
+	* ui/StandaloneMsgSend_dlg.glade: standalone send dlg
+
+2003-06-10  Thomas Muldowney <temas@jabber.org>
+
+    * Makefile.am:  Build cleanups for 1.9.0 release
+    * configure.in:  same
+    * src/Makefile.am:  same
+    * src/modules/ChatView.hh:  same
+    * src/modules/Makefile.am:  same
+
+2003-06-09  Thomas Muldowney <temas@jabber.org>
+
+    * src/Makefile.am:  remove debug from default builds
+
+2003-06-09  Thomas Muldowney <temas@jabber.org>
+
+    * src/modules/GCView.cc:  Add the userlist
+    * src/modules/GCView.hh:  same
+    * ui/GChat_win.glade:  same
+
+2003-06-09  Thomas Muldowney <temas@jabber.org>
+
+    * src/BaseGabberWindow.hh:  raise the window
+    * src/GabberApp.hh:  signal to show a join dialog
+    * src/GabberWin.cc:  fire the join dialog signal when the menu item is
+        activated
+    * src/GabberWin.hh:  same
+    * src/PlainTextView.cc:  string appending, don't rely on internal nicks
+    * src/PlainTextView.hh:  same
+    * src/PrettyText.hh:  same
+    * src/modules/ChatView.cc:  pass in the nicks to the pretty text
+    * src/modules/Makefile.am:  compile and install gc
+    * ui/GCJoin_dlg.glade:  lose the GNOME dep
+    * ui/Makefile.am:  Install the join dialog
+    * initial import of the GC module
+
+2003-06-08  Thomas Muldowney <temas@jabber.org>
+
+    * gabber.schemas.in: Fix the order so it's actually logical again
+    * src/Menus.cc: insert new items more logically
+    * src/Menus.hh: track the insertion position
+    * src/PlainTextView.cc: Scroll the buffer with the composing events
+    * src/modules/ChatView.cc: cancel composing on close, update the last
+        message time from local typing as well, show a timestamp if local gap is
+        too long.
+    * src/modules/ChatViewManager.cc:  if there is no body don't actually create
+        a view.  This is currently only caused by message events that we can't
+        display anyway.
+
+2003-06-08  Julian Missig  <julian@jabber.org>
+
+	* HACKING: Added list of places to find stuff to do.
+	* src/RosterView.cc: Confirmation dialog for delete users
+	* src/modules/ChatView.cc: Fixed close dialog confirmation
+
+2003-06-08  Thomas Muldowney <temas@jabber.org>
+
+    * gabber.schemas.in: reorder plugin loading so that chat is default action
+    * src/PlainTextView.cc: Support local composing events, use a std::set for
+        the internal type.
+    * src/PlainTextView.hh: same
+    * src/modules/ChatView.cc:  Composing evnt fixes, local composing
+    * src/modules/ChatView.hh:  same
+
+2003-06-07  Thomas Muldowney <temas@jabber.org>
+
+    * doxygen.cfg.in: New default settings
+    * src/Makefile.am: rename PlainTextView
+    * src/PlainTextView.hh: timestamp ability
+    * src/PlainTextView.cc: timestamp ability, rename
+    * src/PrettyText.hh: timestamp ability
+    * src/TCPTransmitter.cc: potential leak
+    * src/modules/ChatView.cc: add a timestamp at start and after 5 min gaps
+
+2003-06-06  Thomas Muldowney <temas@jabber.org>
+
+    * src/BaseGabberWindow.hh: virtualize the on_delete_event
+    * src/RosterModel.cc: dumb, we dont' even use this, and it might not be
+        valid at all.
+    * src/modules/ChatView.cc: 3 second time gap for closes
+    * src/modules/ChatViewManager.cc: removed extra debug output
+
+2003-06-06  Thomas Muldowney <temas@jabber.org>
+
+    * src/GabberUtility.hh:  template for deleting, gettext _() define
+    * src/GabberWin.cc:  I'm a picky bitch
+    * src/PluginManager.cc:  temporary descriptive error, should we display 
+        these?
+    * src/RosterModel.cc:  *sigh* a is_group value
+    * src/RosterModel.hh:  same
+    * src/RosterView.cc:  use is_group, the commented out _open_groups stuff
+        should track what groups are expanded but it magically crashes
+        the model/view relation.  Dunno what it is yet.t
+    * src/RosterView.hh:  same
+    * src/modules/StandaloneView.cc:  Finished implementation
+    * src/modules/StandaloneView.hh:  same
+    * src/modules/StandaloneViewManager.cc:  same, only handle messages
+        <body>
+    * src/modules/StandaloneViewManager.hh:  same
+    * ui/Makefile.am:  Installing the standalone msg UI helps us not crash
+
+2003-06-05  Thomas Muldowney <temas@jabber.org>
+
+    * gabber.schemas.in:  normal module is now named standalone
+    * src/GabberWin.cc:  hook up the hide offline contacts menu
+    * src/LogManager.cc:  debug.log is not an appended file, one per session
+    * src/Makefile.am:  move modules to subdir
+    * src/PluginManager.cc:  plugins are in a subdir now
+    * src/RosterModel.cc:  can't call gobj() on nothing, NULL is a valid return
+                           though.  Removed some extraneous debug output.
+    * src/RosterModel.hh:  We're not always hiding offline!
+    * src/Modules/ChatViewManager.cc:  we need to manage the lifetime of views
+    * src/Modules/StandaloneViewManager.cc:  Start of impl
+    * src/Modules/StandaloneViewManager.hh:  Start of impl
+
+2003-06-04  Julian Missig  <julian@jabber.org>
+
+	* src/AddContactDlg.cc: Fixed a problem with display name chooser
+	* src/PlainTextView.cpp: /me implements /me
+	* ui/AddContact_dlg.glade: Fixed a problem with display name chooser
+
+2003-06-03  Julian Missig  <julian@jabber.org>
+
+	* ui/AddContact_dlg.glade: some ui fixes
+	* ui/AddJID_dlg.glade: No need for you. Goodbye.
+	* ui/GChat_win.glade: some ui fixes
+	* ui/Makefile.am: install all the .glade files
+	* ui/OOOChat_win.glade: some ui fixes
+	* ui/S10nRequest_dlg.glade: some ui fixes
+	* ui/StandaloneMsgRecv_dlg.glade: A basic standalone message view
+	* ui/ViewInfo_dlg.glade: some ui fixes
+
+2003-06-03  Julian Missig  <julian@jabber.org>
+
+	* src/AddContactDlg.cc: more complete functionality
+	* src/AddContactDlg.hh: same
+	* ui/AddContact_dlg.glade: same
+	* ui/OOOChat_win.glade: focus fix
+	* ui/ViewInfo_dlg.glade: fixed window type
+
+2003-06-03  Thomas Muldowney <temas@jabber.org>
+
+    * ui/AddContact_dlg.glade:  the window type needs to be top level, popup is
+                                only used for things like popup menus, which 
+                                are not managed by the WM.
+    * src/S10nRequestDlg.hh:  Add a display call, use JabberConnection rather
+                              than GabberApp.
+    * src/S10nRequestDlg.cc:  same
+    * src/GabberApp.cc:  Use the S10nRequestDlg::display function for proper
+                         lifetime management.
+    * src/LogManager.cc:  Remove extraneous debug output
+    * Updated the docs for many heeadrse
+
+2003-06-03  Julian Missig  <julian@jabber.org>
+
+	* HACKING: Added note about BGW::close
+	* src/AddContactDlg.cc: add contact dialog
+	* src/AddContactDlg.hh: same
+	* src/ChatViewManager.cc: comment change
+	* src/GabberWin.cc: Hook up add contact dialog
+	* src/GabberWin.hh: same
+	* src/Makefile.am: same
+	* src/S10nRequestDlg.cc: use Glib::ustring!
+	* src/S10nRequestDlg.hh: same
+	* src/TCPTransmitter.cc: no more sending:
+	* ui/AddContact_dlg.glade: add contact dialog
+	* ui/ViewInfo_dlg.glade: fix a display issue
+
+2003-06-03  Thomas Muldowney <temas@jabber.org>
+
+    * src/LogManager.hh: Basics of the logging system
+    * src/LogManager.cc: same
+    * src/GabberApp.hh:  Have the log manager instance
+    * src/GabberApp.cc:  Create and delete the log manager instance, use the log
+                         manager for debug output.
+    * src/ChatView.cc:  use the log manager for logging
+
+2003-05-31  Julian Missig  <julian@jabber.org>
+
+	* src/ContactInfo.cc: A few more things in Contact Info
+	* src/ContactInfo.hh: same
+	* ui/ViewInfo_dlg.glade: same
+
+2003-05-30  Julian Missig  <julian@jabber.org>
+
+	* src/GabberWin.cc: Beginnings of Contact Info Dlg!
+	* src/ContactInfo.cc: same
+	* src/ContactInfo.hh: same
+	* src/Makefile.am: same
+	* src/RosterView.cc: same
+	* src/RosterView.hh: same
+
+2003-05-30  Thomas Muldowney <temas@jabber.org>
+
+    * src/RosterView.cc:  Hookup delete contact menu item
+    * src/ChatViewManager.cc:  Use the singleton menu
+    * src/Menus.hh:  Move to real singleton, getItem function
+    * src/Menus.cc:  same
+    * src/PluginManager.hh:  loadAll method
+    * src/PluginManager.cc:  same
+    * src/GabberApp.cc:  Delay the loading of plugins until we have the main
+                         window they interact with.
+
+2003-05-30  Julian Missig  <julian@jabber.org>
+
+	* src/ChatView.cc: One label for show+status
+	* src/GabberApp.cc: connect-presence-presence-disconnect cycle is much cleaner
+	* src/GabberApp.hh: same
+	* src/GabberWin.cc: same
+	* src/GabberWin.hh: same
+	* src/JabberConnection.cc: same
+	* src/JabberConnection.hh: same
+	* src/RosterModel.hh: same
+	* ui/OOOChat_win.glade: One label for show+status
+
+2003-05-30  Julian Missig  <julian@jabber.org>
+
+	* src/GabberWin.cc: Clean up this place a bit. Hack to find Gateways
+	* src/GabberWin.hh: same
+
+2003-05-30  Julian Missig  <julian@jabber.org>
+
+	* ui/AddContact_dlg.glade: temas is so demanding.. he wants me to name widgets so he can implement stuff for me.. geez ;)
+
+2003-05-28  Thomas Muldowney <temas@jabber.org>
+
+    * src/GabberApp.hh:  Hook up the disco filter for an agents list
+    * src/GabberApp.cc:  same
+
+2003-05-27  Thomas Muldowney <temas@jabber.org>
+
+    * src/GabberApp.cc:  use the new subscription request dialog
+    * src/GabberWin.cc:  cleanup some roster callback messiness, libsigc bug?
+    * src/GabberWin.hh:  same
+    * src/JabberConnection.cc:  same
+    * src/JabberConnection.hh:  same
+    * src/RosterModel.cc:  roster sets and better presence handling
+    * src/S10nRequestDlg.cc:  new subscription request dialog
+
+2003-05-27  Julian Missig  <julian@jabber.org>
+
+	* ui/S10nRequest_dlg.glade: Named the widgets
+
+2003-05-27  Julian Missig  <julian@jabber.org>
+
+	* ui/AddContact_dlg.glade: Working on UI
+	* ui/S10nRequest_dlg.glade: same
+
+2003-05-18  Thomas Muldowney <temas@jabber.org>
+
+    * src/AgentsWin.cc:  disco testing interface, needs to be built out
+    * src/AgentsWin.hh:  same
+    * src/GabberWin.cc:  Hooked in agents window
+    * ui/Agents_win.glade:  my best work ever!
+
+2003-05-17  Thomas Muldowney <temas@jabber.org>
+
+    * src/RosterModel.cc:  Add a use_icon column to actually switch on/off icons
+    * src/RosterModel.hh:  same
+    * src/RosterView.cc:  The use_icon field is linked to the visible property
+                          on the icon cell renderer.  This fixes the visual bug
+                          with the group name expanding.  Only show the context
+                          menu to regular entries, not groups.
+
+2003-05-12  Julian Missig  <julian@jabber.org>
+
+	* src/GabberWin.cc: Status changer won't crash Gabber now ;)
+	* src/GabberWin.hh: same
+	* ui/Gabber_win.glade: same
+
+2003-05-10  Julian Missig  <julian@jabber.org>
+
+	* src/PlainTextView.cpp: Use 1/4 lineheight rather than 1/2
+
+2003-05-10  Julian Missig  <julian@jabber.org>
+
+	* src/ChatView.cc: composing fixes, set default text entry size
+	* src/PlainTextView.cpp: lineheight = 1.5 * lineheight ;)
+	* ui/Gabber_win.glade: Some UI fixes
+	* ui/OOOChat_win.glade: same
+
+2003-05-10  Julian Missig  <julian@jabber.org>
+
+	* src/ChatView.cc: Fix some composing stuff
+	* src/GabberWin.cc: Try to rid ourselves of status dialog
+	* src/GabberWin.hh: same
+	* src/PlainTextView.cpp: Set local/remote nicknames
+	* src/PlainTextView.hh: same
+	* src/PrettyText.hh: same
+	* ui/GChat_win.glade: Basic group chat window
+	* ui/Gabber_win.glade: Try to rid ourselves of status dialog
+	* ui/Makefile.am: Install stuff
+
+2003-05-09  Julian Missig  <julian@jabber.org>
+
+	* ui/GChat_win.glade: Basic group chat window
+
+2003-05-08  Julian Missig  <julian@jabber.org>
+
+	* src/Makefile.am: patch from wrobell <wrobell@ite.pl> for proper module installation
+
+2003-05-07  Julian Missig  <julian@jabber.org>
+
+	* pixmaps/Makefile.am: Fix makefile
+	* pixmaps/away.xpm: removed from CVS
+	* pixmaps/chat.xpm: same
+	* pixmaps/dnd.xpm: same
+	* pixmaps/offline.xpm: same
+	* pixmaps/online.xpm: same
+	* pixmaps/xa.xpm: same
+	* src/GabberWidgets.cc: .xpm -> .png a few times
+
+2003-05-07  Kenny Graunke  <kenny@whitecape.org>
+
+	Lighbulbs aglow! Replaced PNG status icons with slightly spiffed
+	versions of the old XPM ones, updated code to use the PNGs.
+
+	* pixmaps/Makefile.am: install PNG icons...probably
+	* pixmaps/away.png: replaced
+	* pixmaps/chat.png: same
+	* pixmaps/dnd.png: same
+	* pixmaps/gabber.png: replaced with old (gabber 1) icon for now
+	* pixmaps/offline.png: same
+	* pixmaps/online.png: same
+	* pixmaps/xa.png: same
+	* src/GabberWidgets.cc: Use PNG icons
+	* src/RosterModel.cc: same
+
+2003-05-07  Julian Missig  <julian@jabber.org>
+
+	* src/GabberWidgets.cc: Don't emit changed() on presence, fixes crash
+
+2003-05-07  Julian Missig  <julian@jabber.org>
+
+	* src/ChatView.cc: Separate out the resource locking
+	* src/ChatView.hh: same
+
+2003-05-06  Julian Missig  <julian@jabber.org>
+
+	* src/ChatView.cc: Show status messages
+	* src/ChatView.hh: same
+	* src/GabberWidgets.cc: Attempt tooltips
+	* ui/Gabber_win.glade: Status selection label gone
+
+2003-05-06  Thomas Muldowney <temas@jabber.org>
+
+    * src/PlainTextView.cpp: Properly remove the composing marker
+    * src/RosterModel.hh: Sort the group case insensitive, use
+                          Glib::ustring
+    * src/RosterModel.cc:  use Glib::ustring
+
+2003-05-06  Julian Missig  <julian@jabber.org>
+
+	* src/ChatView.cc: Basic resource selection with PrettyJID
+	* src/ChatView.hh: same
+	* src/ChatViewManager.cc: same
+	* src/ChatViewManager.hh: same
+	* src/GabberWidgets.cc: PrettyJID take 2, with comments
+	* src/GabberWidgets.hh: same
+
+2003-05-06  Thomas Muldowney <temas@jabber.org>
+
+    * src/RosterModel.cc: don't fail on offline user cases, make group names 
+                          bold
+    * src/RosterView.cc: use markup in the roster cellrenderer
+
+2003-05-05  Thomas Muldowney <temas@jabber.org>
+
+    * src/ChatView.cc: G_App cleanups
+    * src/ChatViewManager.cc: same
+    * src/GabberWidgets.cc: same
+    * src/GabberWin.cc: same
+    * src/GabberWin.hh: same
+    * src/PlainTextView.cpp:
+    * src/PrefsInterface.cc:
+    * src/GabberApp.cc: Now a Singleton
+    * src/GabberApp.hh: same
+    * src/RosterModel.cc: return the JID properly, Show the nickname and
+                          icon.
+    * src/RosterView.cc: toggle groups expanded value
+    * src/Makefile.am: add ResourceManager
+    * src/main.cc: Don't use G_App
+    * src/ResourceManager.cc: Added, makes sure we only have one real instance
+                              of larger resource data.
+    * src/ResourceManager.hh: same
+    * src/Singleton.hh: Added
+
+2003-05-02  Julian Missig  <julian@jabber.org>
+
+	* src/GabberWin.cc: Try to get the status menu working right.. no luck
+	* src/PlainTextView.cpp: Don't allow focus on text view widget
+	* ui/Gabber_win.glade: UI improvements
+	* ui/OOOChat_win.glade: UI improvements
+	* ui/Roster_menu_user.glade: UI improvements
+
+2003-04-28  Thomas Muldowney <temas@jabber.org>
+
+    * src/GabberWin.cc: Use the defaults for hide_offline (true) and sort with
+                        groups (true)
+    * src/RosterModel.cc: hide offline contacts is working
+    * src/RosterModel.hh: same
+    * ui/Gabber_win.glade: Remove the hints
+
+2003-04-27  Thomas Muldowney <temas@jabber.org>
+
+    * src/ChatView.cc: Naming cleanup, stripped out some complexities
+    * src/ChatView.hh: same
+    * src/ChatViewManager.cc: same
+    * src/GabberWin.cc: Use the latest RosterModel changes
+    * src/PlainTextView.cpp: stripped of some complexities
+    * src/PlainTextView.hh: same
+    * src/PrettyText.hh: same
+    * src/RosterModel.cc: New mechanisms, hopefully this is more final, sorts
+    * src/RosterModel.hh: same
+
+2003-04-24  Thomas Muldowney <temas@jabber.org>
+
+    * src/GabberWin.cc: Tell the RosterModel to use groups
+    * src/RosterModel.cc: Support groups, no sorting yet
+    * src/RosterModel.hh: same
+
+2003-04-23  Thomas Muldowney <temas@jabber.org>
+
+    * src/BaseGabberWindow.cc: namespace cleanup
+    * src/BaseGabberWindow.hh: same
+    * src/ChatView.cc: same
+    * src/ChatView.hh: same
+    * src/ChatViewManager.cc: same
+    * src/ConfigPaths.hh: same
+    * src/ConfigWrapper.hh: same
+    * src/Environment.hh: same
+    * src/Event.hh: same
+    * src/GabberApp.cc: same
+    * src/GabberApp.hh: same
+    * src/GabberUtility.cc: same
+    * src/GabberUtility.hh: same
+    * src/GabberWidgets.cc: same
+    * src/GabberWidgets.hh: same
+    * src/GabberWin.cc: use the new RosterModel, namespace cleanup
+    * src/GabberWin.hh: same
+    * src/JabberConnection.cc: namespace cleanup
+    * src/JabberConnection.hh: same
+    * src/Makefile.am: added RosterModel
+    * src/Menus.cc: namespace cleanup
+    * src/Menus.hh: same
+    * src/MessageViews.hh: same
+    * src/PlainTextView.cpp: same
+    * src/PlainTextView.hh: same
+    * src/PluginBase.hh: same
+    * src/PluginManager.cc: same
+    * src/PluginManager.hh: same
+    * src/PrefsInterface.cc: same
+    * src/PrefsInterface.hh: same
+    * src/PrettyText.hh: same
+    * src/RosterModel.cc:  Added, our own derived roster model
+    * src/RosterModel.hh:  same
+    * src/RosterView.cc: use the new RosterModel, namespace cleanup
+    * src/RosterView.hh: same
+    * src/TCPTransmitter.cc: namespace cleanup
+    * src/TCPTransmitter.hh: same
+    * src/main.cc: same
+
+2003-04-18  Julian Missig  <julian@jabber.org>
+
+	* ui/OOOChat_win.glade: GNOME--
+
+2003-04-09  Julian Missig  <julian@jabber.org>
+
+	* ui/Gabber_win.glade: Remove GNOME
+	* ui/Login_dlg.glade: Remove GNOME
+
+2003-04-08  Julian Missig  <julian@jabber.org>
+
+	* configure.in: Depend on libgconfmm and libglademm and gtkmm-2.0
+	* ui/Gabber_win.glade: Start removing GNOMEisms
+
+2003-04-06  Thomas Muldowney <temas@jabber.org>
+
+    * configure.in: No more GNOME deps
+    * src/GabberApp.cc: same
+    * src/GabberApp.hh: same
+    * src/GabberUtility.cc: same
+    * src/GabberWidgets.cc: same
+    * src/GabberWin.cc: same
+    * src/GabberWin.hh: same
+    * src/Makefile.am: same
+    * src/PluginManager.cc: same
+    * src/RosterView.cc: same
+    * ui/OOOChat_win.glade: same
+
+2002-12-21  Thomas Muldowney <temas@jabber.org>
+
+    * python/*:  Added the python version of this beast.  This is intended to be
+                 a rapid prototyping helper.
+
+2002-11-13  Thomas Muldowney <temas@jabber.org>
+
+    * src/RosterView.cc:  Show an icon for online people, dbl click a jid to
+        start a conversation.
+    * src/RosterView.hh:  same
+
+2002-11-13  James Widman <james@jwidman.com>
+
+    * pixmaps/away.png: ADDED -- I've heard it said that if someone acts in a
+    rash way, it might be called "a cry for help," indicating that some larger
+    personal problem was the motivation behind said rash behavior.
+
+    This is "a cry for icons that don't suck or aren't inappropriate."
+    It indicates my personal problem with GIMP and not being able to draw.
+    But mostly not being able to draw. ;)  I stole everything from
+    art.gnome.org except for "xa" --- "chat," "dnd," and "xa" need good
+    representations, and all of them should probably be downsized.
+
+    See the "ICONS" section of art.gnome.org for credits.
+    * pixmaps/chat.png: ADDED
+    * pixmaps/dnd.png: ADDED
+    * pixmaps/offline.png: ADDED
+    * pixmaps/online.png: ADDED
+    * pixmaps/xa.png: ADDED
+    * src/GabberWidgets.cc: use <show/> icons
+    * src/GabberWidgets.hh: same
+    * src/Menus.cc: made User::instance private & static
+    * src/Menus.hh: same
+    
+2002-10-25  James Widman <james@jwidman.com>
+
+    * src/BaseGabberWindow.hh: Added an accessor for _thisWindow
+    * src/ChatView.cc: -- Changed names from Chat* to Chat::* (made a
+      namespace "Chat" and put classes in it; this wasn't really necessary,
+      but it makes for shorter and equally intelligible names within the
+      namespace).
+                       -- Added class Chat::DeletionHelper, which grabs some of
+      MessageView's signals and decides whether to pass pointers on to 
+      the ViewManager for deletion or present the user with those silly
+      "are you sure?" dialogs. 
+    * src/ChatView.hh: same
+    * src/ChatViewManager.cc: same
+    * src/MessageViews.hh: changed name to BaseMessageView
+    * src/PlainTextView.cpp: made scrolling a little smarter, adjusted 
+      the margins a bit. 
+    * src/PlainTextView.hh: same
+    * src/PrettyText.hh: Added the MsgVisibilityStatus enumeration and a
+      Glib::Timer to keep track of when/if a message was made visible to the
+      user.
+    
+2002-10-24  James Widman <james@jwidman.com>
+    
+    *  src/ChatView.cc: pass the Gtk::ScrolledWindow as an argument to
+    PlainTextView constructor
+    *  src/Menus.cc: removed unnecessary headers & comments
+    *  src/Menus.hh: same
+    *  src/PlainTextView.cpp: Auto-scroll down in a sem-intelligent way
+    *  src/PlainTextView.hh: same
+
+2002-10-17  Thomas Muldowney <temas@jabber.org>
+
+    * src/Menus.cc:  Changed the IndeMenu namespace to Popups
+    * src/Menus.hh:  same
+    * src/ChatViewManager.cc:  same
+    * src/RosterView.cc:  same
+    * src/ChatView.cc:  We weren't sending an id with composing msgs
+    * src/PlainTextView.cc:  Need a line break
+
+2002-10-16  James Widman <james@jwidman.com>
+    
+    * src/Environment.hh: ADDED. Constant strings that contain
+    some environment variables, particularly those that might 
+    need special initialization at run time. 
+    * src/Menus.cc: ADDED. right-click menus; initially it only
+    contains the User class, which pops up when a roster item 
+    for a user JID (i.e., not a transport or server component)
+    is right-clicked on.
+    * src/Menus.hh: ADDED
+
+    * src/BaseGabberWindow.cc: now uses class Environment
+    * src/main.cc: same
+    * src/GabberApp.cc: same
+    * src/GabberApp.hh: same
+    * src/ChatView.cc: Wow! now we can *start* chats! :D
+    * src/ChatView.hh: same
+    * src/ChatViewManager.cc: same
+    * src/RosterView.cc: same
+    * src/RosterView.hh: same
+    * src/ConfigPaths.hh: added comments
+    * src/Makefile.am: updated for added files
+
+2002-10-16  Thomas Muldowney <temas@jabber.org>
+
+    * src/ChatView.*:  composing cleanups
+
+2002-10-12  Thomas Muldowney <temas@jabber.org>
+
+    * src/ChatView.*:  jabber:x:event stuff
+
+2002-10-04  Thomas Muldowney <temas@jabber.org>
+
+    * src/PlainTextView.*:  Generic plain text view
+    * src/PrettyText.hh:  abstract interface for a text view
+    * src/ChatView.*:  Updated to use a PrettyText
+    * ui/OOOChat_dlg.glade:  Don't have a chat view anymore
+
+2002-09-29  James Widman <james@jwidman.com>
+    
+    * HACKING: "how to update gabber.schema"
+    * gabber.schemas.in: Added account/priority
+    * src/ConfigManager.cc: DELETED
+    * src/ConfigManager.hh: DELETED
+    * src/GabberApp.cc: Switched from ConfigManager to ConfigWrapper
+    * src/GabberApp.hh: same
+    * src/GabberWidgets.cc: same
+    * src/Makefile.am: same
+    * src/PluginManager.cc: same
+    * src/PluginManager.hh: same
+    * src/PrefsInterface.cc: same
+    * src/PrefsInterface.hh: same
+    * src/main.cc: same
+
+2002-09-27  Thomas Muldowney <temas@jabber.org>
+
+    * src/GabberWin:  Added basic presence changer
+    * General compilation cleanups
+
+2002-09-25  James Widman <james@jwidman.com>
+    
+    * gabber.schemas.in: Added a default values for a list of plugins
+            to be loaded on startup
+    * src/ConfigManager.cc: Added plugin list accessors
+    * src/ConfigManager.hh: Added plugin list
+    * src/GabberApp.cc: Creates the PluginManager
+    * src/Makefile.am: compiles new file PluginManager.cc
+    * src/PluginManager.cc: ADDED; at some point there should be a UI
+            associated with it. 
+    * src/PluginManager.hh: ADDED
+
+2002-09-22  James Widman <james@jwidman.com>
+    
+    * TODO: "we need static builds"
+
+2002-09-22  James Widman <james@jwidman.com>
+    
+    * configure.in: We're *modular* now, baby! (libtool)
+    * src/ChatView.hh: CVM inherits from PluginBase, CVs use namespace * jabberoo
+    * src/ChatViewManager.cc: Added create_pluggable(), which Gabber calls
+            when it loads the ooochat module
+    * src/GabberApp.cc: Send <presence/> on_session_roster();
+            FIXME: load plugin, call plugin's PluginBase creator.
+    * src/GabberWin.cc: Connected the login/logout menu items
+    * src/GabberWin.hh: same
+    * src/Makefile.am: set up ChatView to be built as a module
+    * src/MessageViews.cc: DELETED
+    * src/MessageViews.hh: simplified
+    * src/PluginBase.hh: ADDED -- Base class for plugins. 
+
+2002-09-21  Julian Missig  <julian@jabber.org>
+
+	* src/RosterView.cc: Use Gtk::TreeRowReference,
+	* src/RosterView.hh: and now we can sort! yey!
+
+2002-09-18  James Widman <james@jwidman.com>
+    
+     * HACKING: Updated style rules
+     * configure.in: We want GLib *2.0*, not 1.2
+
+2002-09-18  James Widman <james@jwidman.com>
+    
+    * src/MessageManager.cc: DELETED
+    * src/MessageManager.hh: DELETED
+    * src/ViewManager.cc: DELETED
+    * src/ViewManager.hh: DELETED
+    * src/ChatView.cc: adjusting for the above mentioned deletions
+    * src/GabberApp.cc: same
+    * src/Makefile.am: same
+    * src/MessageViews.cc: same
+    * src/MessageViews.hh: same
+
+2002-09-18  James Widman <james@jwidman.com>
+    
+    * src/PrefsInterface.hh: "remember password"
+    * src/PrefsInterface.cc: same
+    * src/ConfigManager.hh: put "bool _savepassword" in public
+
+2002-09-18  James Widman <james@jwidman.com>
+    
+    * src/RosterView.hh: Added a general event handler
+    * src/RosterView.cc: Added R-click handling 
+    * ui/Roster_menu_user.glade: An R-click menu for the roster
+
+2002-09-12  Thomas Muldowney <temas@jabber.org>
+    
+    * src/ChatView.*: Use the PrettyJID and better event handling
+    * src/GabberUtitlity.*:  Start of utility functions, mostly ported from
+                             Gabber1
+    * src/GabberWidgets.*:  Extra widgets that gabber uses, initial gabber1 port
+    * src/Event.hh:  Generic event class
+
+2002-09-09  Thomas Muldowney <temas@jabber.org>
+
+    * src/ChatView.hh:  Added the new chatview and its manager.
+    * src/ChatView.cc:  same
+    * src/ChatViewManager.cc:  same
+
+2002-08-28  Julian Missig  <julian@jabber.org>
+
+	* src/MessageManager.cc: Compile, damn you
+	* src/ViewManager.cc: same
+
+2002-08-27  Thomas Muldowney <temas@jabber.org>
+
+    * src/ChatView.cc: Add the chatview
+    * src/ChatView.hh: same
+    * src/MessageViews.cc:  Update for new header
+    * src/MessageViews.hh:  Update to new model
+
+2002-08-26  Thomas Muldowney <temas@jabber.org>
+
+    * docs/MM-UML.dia: new class diagram of the Message Manager and friends
+    * docs/MM-flow.dia:  generic flow of Message Manager
+    * docs/NewBlankMsgView.dia: sequence diagram of starting a conversation
+
+2002-08-25  James Widman  <ns@jabberstudio.org>
+
+	* src/ConfigManager.cc: Initial commit for the new MessageManager & friends 
+	* src/ConfigManager.hh: same
+	* src/GabberApp.cc: same
+	* src/GabberApp.hh: same
+	* src/Makefile.am: same
+	* src/MessageManager.hh: same
+	* src/MessageManager.cc: same
+	* src/ViewManager.hh: same (Added class ViewManager)
+	* src/ViewManager.cc: same
+	* src/MessageViews.cc: same
+	* src/MessageViews.hh: same
+
+2002-08-08  Julian Missig  <julian@jabber.org>
+
+	* README.cvs: jabberoo is in JabberStudio CVS
+	* configure.in: Generate doxygen.cfg
+	* doxygen.cfg.in: Set up doxygen
+
+2002-08-02  Julian Missig  <julian@jabber.org>
+
+	* src/GabberApp.cc: RosterModel and View basically work!
+	* src/GabberApp.hh: same
+	* src/GabberWin.cc: same
+	* src/GabberWin.hh: same
+	* src/Makefile.am: same
+	* src/RosterView.cc: same
+	* src/RosterView.hh: same
+	* ui/Gabber_win.glade: same
+
+2002-08-02  Julian Missig  <julian@jabber.org>
+
+	* src/GabberApp.cc: quit() is nicer
+	* src/GabberWin.cc: Use quit()
+	* src/GabberWin.hh: same
+	* src/RosterView.cc: More feeble attempts at TreeModel. GRR.
+	* src/RosterView.hh: same
+
+2002-08-01  Julian Missig  <julian@jabber.org>
+
+	* src/BaseGabberWindow.cc: default delete_event handler
+	* src/BaseGabberWindow.hh: same
+	* src/GabberWin.cc: Set up roster model
+	* src/GabberWin.hh: same
+	* src/Makefile.am: roster model
+	* src/RosterView.cc: Basics of roster model
+	* src/RosterView.hh: same
+	* ui/GCJoin_dlg.glade: basic join dialog
+	* ui/Gabber_win.glade: some renaming
+
+2002-07-29  Julian Missig  <julian@jabber.org>
+
+	* src/GabberWin.cc: Working on roster...
+	* src/PresenceManager.hh: same
+	* src/RosterView.cc: same
+	* src/RosterView.hh: same
+
+2002-07-26  Julian Missig  <julian@jabber.org>
+
+	* README.cvs: gettext dependency added for ns
+	* src/GabberApp.cc: JabberConnection abstraction over joo + tcpt
+	* src/GabberApp.hh: same
+	* src/PrefsInterface.cc: G_App->login() is now G_App->connect()
+
+2002-07-26  Julian Missig  <julian@jabber.org>
+
+	* README.cvs: Add some of the dependencies for ns
+
+2002-07-24  Julian Missig  <julian@jabber.org>
+
+	* src/GabberApp.cc: Slowly moving forward...
+	* src/GabberApp.hh: same
+	* src/Makefile.am: same
+
+2002-07-20  Julian Missig  <julian@jabber.org>
+
+	* Makefile.am: install gconf schemas
+	* README.cvs: Explain how to use gconf schemas
+	* TODO: encrypt password...
+	* configure.in: require a newer intltool for gconf schema convertor
+	* gabber.schemas.in: gconf schema
+	* src/ConfigManager.cc: store stuff in gconf
+	* src/ConfigManager.hh: same
+	* ui/Login_dlg.glade: a11y
+
+2002-07-19  Julian Missig  <julian@jabber.org>
+
+	* HACKING: The Joys Thereof
+
+2002-07-19  Julian Missig  <julian@jabber.org>
+
+	* src/GabberApp.cc: Start G_Win
+	* src/GabberApp.hh: same
+	* src/Makefile.am: compile GabberWin
+	* src/PrefsInterface.cc: start G_Win
+	* ui/Gabber_win.glade: Half decent
+
+2002-07-19  Thomas Muldowney <temas@jabber.org>
+
+    * src/TCPTransmitter.cc:  Don't use buffered mode
+
+2002-07-19  Julian Missig  <julian@jabber.org>
+
+	* src/GabberApp.cc: ConfigManager
+	* src/Makefile.am: same
+	* src/PrefsInterface.cc: use ConfigManager
+	* ui/Login_dlg.glade: Some more frames
+
+2002-07-18  Thomas Muldowney <temas@jabber.org>
+
+    * TCPTransmitter.cc:  Actually resolves and connects
+    * GabberApp.cc: added spaces to make it legible, yeah it's a boring change
+
+2002-07-18  Julian Missig  <julian@jabber.org>
+
+	* configure.in: Added libglademm, gconfmm deps
+	* ui/.cvsignore: *.gladep
+	* ui/Login_dlg.glade: Initial login dialog
+
+2002-07-18  Julian Missig  <julian@jabber.org>
+
+	* configure.in: libgnomeuimm
+	* src/BaseGabberWindow.cc: Sort of almost works
+	* src/BaseGabberWindow.hh: same
+	* src/GabberApp.cc: use proper Gnome::UI::get_module_info()
+	* src/Makefile.am: build PrefsInterface
+	* src/main.cc: try catch
+
+2002-07-18  Julian Missig  <julian@jabber.org>
+
+	* configure.in: We now require libglademm
+	* src/BaseGabberWindow.cc: BaseGabberWindow -- it compiles!
+	* src/BaseGabberWindow.hh: same
+	* src/Makefile.am: Compile BaseGabberWindow, since we can
+
+2002-07-16  Julian Missig  <julian@jabber.org>
+
+	* pixmaps/Makefile.am: show-available to show-online
+	* src/GabberApp.cc: Very basic stdin/stdout test connect
+	* src/GabberApp.hh: G_App signals
+	* src/Makefile.am: -DTRANSMITTER_DEBUG for now.
+
+2002-07-15  Julian Missig  <julian@jabber.org>
+
+	* src/GabberApp.cc: Hooking up more signals...
+	* src/GabberApp.hh: same
+
+2002-07-14  Julian Missig  <julian@jabber.org>
+
+	* configure.in: Properly set PACKAGE
+	* pixmaps/Makefile.am: pixmap directory
+	* src/GabberApp.cc: Locate and set pixmapDir and pkgdataDir
+	* src/GabberApp.hh: same
+	* src/Makefile.am: define PKGDATADIR
+	* src/main.cc: set PACKAGE and VERSION
+
+2002-07-14  Julian Missig  <julian@jabber.org>
+
+	* .cvsignore: Ignore me...
+	* gabber.desktop.in: Basic desktop file. should work.
+	* pixmaps/.cvsignore: Ignore me...
+	* po/.cvsignore: same
+	* src/.cvsignore: same
+	* ui/.cvsignore: same
+
+2002-07-14  Thomas Muldowney <temas@jabber.org>
+
+    * src/Makefile.am: Updated to use jabberoo pkg-config settings.
+    * configure.in: Actually require autoconf 2.50+, pkg-config calls, static
+                    jabberoo
+    * src/TCPTransmitter.cc:  Updated to gtk/glib 2 calls
+
+2002-06-18  Thomas "temas" Muldowney <temas@jabber.org>
+
+    * Added TCPTransmitter, test compiled to object file with new platform
+
+2002-05-21  Julian Missig  <julian@jabber.org>
+
+	* First ChangeLog entry ever

@@ -1,0 +1,11 @@
+Bored? Need something to code? Want to impress your friends?
+
+Write a Gabber 2 Module!
+
+You'll be cooler than me! (wow!)
+
+tabbed chats: Make a replacement chat module which places all the chats in one window and uses tabs instead. That seems to be popular with the kids these days.
+
+autocomplete: Build up a dictionary as the user types words. Whenever the user is typing a new word, has entered enough letters, and has paused for a very short amount of time (long enough that we aren't *always* searching, but short enough that the user need not perceive wait time),  attempt to match to the dictionary and present the possible autocompletion in blue. If the user hits tab the word autocompletes. Bonus points if you implement autocompletion for phrases, not just words. See Carnegie Mellon 15-211 homework assignments 2 and 3. ;)
+
+status stalker: Create a nice centralized UI for watching the away messages of contacts. Put the most recently changed status messages first. Give live updates on idle time and the last time the user sent you a message. If you don't really have an idea of why this would be useful, make friends with some college students and find out what they do when they want to avoid work for a minute or two but don't want to leave their computers.

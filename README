@@ -1,0 +1,43 @@
+Gabber: We Need a New Tagline
+------
+
+Thanks for trying Gabber 2.
+
+Gabber 2 requires:
+
+libsigc++ 1.2 ( http://libsigc.sf.net/ )
+	Please note that Gabber has NOT been tested with libsigc++ 2.0. 
+Changes will probably need to be made to Jabberoo to get it to work.
+
+gtkmm 2.0 ( http://www.gtkmm.org/ )
+	Again, gtkmm 2.4 requires libsigc++ 2.0, which is UNTESTED.
+
+gconfmm	2.0 ( http://www.gtkmm.org/ )
+libglademm 2.0 ( http://www.gtkmm.org/ )
+
+jabberoo 1.9.4 ( http://gabber.jabberstudio.org/ )
+	The JabberOO version needs to match the Gabber version. It is 
+necessary for compilation, but if you use --enable-static-jabberoo it is 
+not necessary to include a separate binary of JabberOO.
+
+Gabber 2's web site is http://gabber.jabberstudio.org/
+
+Bugs may be filed at http://www.jabberstudio.org/projects/gabber/bugs/
+
+Compilation is a standard ./configure && make && sudo make install
+On binary-based systems, you may need to set a --prefix=/usr or something 
+similar.
+
+Gabber 2 *CANNOT* be installed simultaneously with Gabber 1. The second 
+you type 'make install' you are overwriting your Gabber 1 binary. If you 
+wish to 'make install' Gabber 2, then be kind to your system and uninstall 
+Gabber 1 first (otherwise you'll have a lot of useless files lying 
+around). Should you choose not to 'make install' Gabber 2 (as would be 
+the wise thing to do, as it is far from a 2.0 still), Gabber 2 will run 
+just fine as ./src/gabber from within the source directory.
+
+Just be sure you 'make install-schemas' so that 
+Gabber's GConf data is properly installed.
+
+If you want Raw XML Input, add the 'raw' module to the pluginlist in gconf.
+Editing extra gconf keys is easily achieved using gconf-editor.

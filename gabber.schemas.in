@@ -1,0 +1,410 @@
+<gconfschemafile>
+  <schemalist>
+    <schema>
+      <key>/schemas/apps/gabber/account/username</key>
+      <applyto>/apps/gabber/account/username</applyto>
+      <owner>gabber</owner>
+      <type>string</type>
+      <locale name="C">
+        <short>The Jabber username</short>
+        <long>The Jabber username</long>
+      </locale>
+    </schema>
+    <schema>
+      <key>/schemas/apps/gabber/account/server</key>
+      <applyto>/apps/gabber/account/server</applyto>
+      <owner>gabber</owner>
+      <type>string</type>
+      <default>jabber.org</default>
+      <locale name="C">
+        <short>The Jabber server</short>
+        <long>The Jabber server to connect to. Current large jabber servers include jabber.com and jabber.org. See http://www.jabberview.com/ for a list of some of the public servers.</long>
+      </locale>
+    </schema>
+    <schema>
+      <key>/schemas/apps/gabber/account/port</key>
+      <applyto>/apps/gabber/account/port</applyto>
+      <owner>gabber</owner>
+      <type>int</type>
+      <default>5222</default>
+      <locale name="C">
+        <short>The Jabber server port</short>
+        <long>The port on the Jabber server to connect to. Jabber servers are generally set up listening on port 5222, although some Jabber servers listen for an SSL connection on 5223.</long>
+      </locale>
+    </schema>
+    <schema>
+      <key>/schemas/apps/gabber/account/password</key>
+      <applyto>/apps/gabber/account/password</applyto>
+      <owner>gabber</owner>
+      <type>string</type>
+      <locale name="C">
+        <short>The Jabber password. Do not change this.</short>
+        <long>The Jabber password. If you see nothing here, then savepassword was probably set to false. Do not change this. It is encrypted.</long>
+      </locale>
+    </schema>
+    <schema>
+      <key>/schemas/apps/gabber/account/resource</key>
+      <applyto>/apps/gabber/account/resource</applyto>
+      <owner>gabber</owner>
+      <type>string</type>
+      <default>Gabber</default>
+      <locale name="C">
+        <short>The Jabber resource</short>
+        <long>The Jabber resource. Your resource should be unique so you can log into the same Jabber account from different computers (or Jabber clients) at the same time. Generally it is either the name of the client you're using or the name of your computer.</long>
+      </locale>
+    </schema>
+    <schema>
+      <key>/schemas/apps/gabber/account/priority</key>
+      <applyto>/apps/gabber/account/priority</applyto>
+      <owner>gabber</owner>
+      <type>int</type>
+      <default>9</default>
+      <locale name="C">
+        <short>This session's priority</short>
+        <long>The priority you will connect with. Important to consider if you connect from different places simultaneously; the session with the highest priority will receive incoming messages.</long>
+      </locale>
+    </schema>
+    <schema>
+      <key>/schemas/apps/gabber/account/savepassword</key>
+      <applyto>/apps/gabber/account/savepassword</applyto>
+      <owner>gabber</owner>
+      <type>bool</type>
+      <default>false</default>
+      <locale name="C">
+        <short>Whether or not to save the Jabber password</short>
+        <long>If this is set to true, Gabber will encrypt and store the Jabber password for future use. Otherwise it will be forgotten after each session.</long>
+      </locale>
+    </schema>
+    <schema>
+      <key>/schemas/apps/gabber/account/ssl</key>
+      <applyto>/apps/gabber/account/ssl</applyto>
+      <owner>gabber</owner>
+      <type>bool</type>
+      <default>false</default>
+      <locale name="C">
+        <short>Use SSL encrypted communication with the server</short>
+        <long>If Gabber was compiled with SSL support enabled and this is enabled, Gabber will use OpenSSL to encrypt a socket to the server. This does not encrypt messages going from the server to another server.</long>
+      </locale>
+    </schema>
+    <schema>
+      <key>/schemas/apps/gabber/account/autoconnect</key>
+      <applyto>/apps/gabber/account/autoconnect</applyto>
+      <owner>gabber</owner>
+      <type>bool</type>
+      <default>false</default>
+      <locale name="C">
+        <short>Automatically connect on Gabber startup</short>
+        <long>If this is enabled, Gabber will automatically attempt to connect to the server when you start it, rather than presenting you a Log In dialog. It will prompt for a password if one is not saved.</long>
+      </locale>
+    </schema>
+    <schema>
+      <key>/schemas/apps/gabber/account/reconnect</key>
+      <applyto>/apps/gabber/account/reconnect</applyto>
+      <owner>gabber</owner>
+      <type>bool</type>
+      <default>true</default>
+      <locale name="C">
+        <short>Automatically reconnect when disconnected</short>
+        <long>If this is enabled, Gabber will automatically attempt to reconnect when disconnected for whatever reason.</long>
+      </locale>
+    </schema>
+    <schema>
+      <key>/schemas/apps/gabber/account/closed_groups</key>
+      <applyto>/apps/gabber/account/closed_groups</applyto>
+      <owner>gabber</owner>
+      <type>list</type>
+      <list_type>string</list_type>
+      <locale name="C">
+        <short>Groups that are expanded between sessions.</short>
+        <long>This list is all the groups that will be autoexpanded between logins and when hiding offline contacts is toggled.</long>
+      </locale>
+    </schema>
+    <schema>
+      <key>/schemas/apps/gabber/groupchat/nickname</key>
+      <applyto>/apps/gabber/groupchat/nickname</applyto>
+      <owner>gabber</owner>
+      <type>string</type>
+      <locale name="C">
+	<short>The default nickname for group chats.</short>
+	<long>This is the default nickname which is used in the join group chat dialog.</long>
+      </locale>
+    </schema>
+    <schema>
+      <key>/schemas/apps/gabber/interface/contactlist_hideoffline</key>
+      <applyto>/apps/gabber/interface/contactlist_hideoffline</applyto>
+      <owner>gabber</owner>
+      <type>bool</type>
+      <default>false</default>
+      <locale name="C">
+        <short>Hide Offline Contacts</short>
+        <long>If this is enabled, offline contacts in the contact list will not be displayed.</long>
+      </locale>
+    </schema>
+    <schema>
+      <key>/schemas/apps/gabber/interface/messages_autodisplay</key>
+      <applyto>/apps/gabber/interface/messages_autodisplay</applyto>
+      <owner>gabber</owner>
+      <type>bool</type>
+      <default>true</default>
+      <locale name="C">
+        <short>Automatically display messages when Available or Free for Chat</short>
+        <long>If this is enabled, Gabber will automatically open messages when your status is Available or Free for Chat. Messages will still be queued up when you are Away, Busy, or Extended Away.</long>
+      </locale>
+    </schema>
+    <schema>
+      <key>/schemas/apps/gabber/interface/messages_spellcheck</key>
+      <applyto>/apps/gabber/interface/messages_spellcheck</applyto>
+      <owner>gabber</owner>
+      <type>bool</type>
+      <default>true</default>
+      <locale name="C">
+        <short>Check messages for spelling mistakes</short>
+        <long>If this is enabled, Gabber will check the spelling of messages and chats using aspell or ispell.</long>
+      </locale>
+    </schema>
+    <schema>
+      <key>/schemas/apps/gabber/interface/contactlist_pos_x</key>
+      <applyto>/apps/gabber/interface/contactlist_pos_x</applyto>
+      <owner>gabber</owner>
+      <type>int</type>
+      <default>-1</default>
+      <locale name="C">
+        <short>x position of contact list window</short>
+        <long></long>
+      </locale>
+    </schema>
+    <schema>
+      <key>/schemas/apps/gabber/interface/contactlist_pos_y</key>
+      <applyto>/apps/gabber/interface/contactlist_pos_y</applyto>
+      <owner>gabber</owner>
+      <type>int</type>
+      <default>-1</default>
+      <locale name="C">
+        <short>y position of contact list window</short>
+        <long></long>
+      </locale>
+    </schema>
+    <schema>
+      <key>/schemas/apps/gabber/interface/contactlist_size_width</key>
+      <applyto>/apps/gabber/interface/contactlist_size_width</applyto>
+      <owner>gabber</owner>
+      <type>int</type>
+      <default>185</default>
+      <locale name="C">
+        <short>width of contact list window</short>
+        <long></long>
+      </locale>
+    </schema>
+    <schema>
+      <key>/schemas/apps/gabber/interface/contactlist_size_height</key>
+      <applyto>/apps/gabber/interface/contactlist_size_height</applyto>
+      <owner>gabber</owner>
+      <type>int</type>
+      <default>270</default>
+      <locale name="C">
+        <short>height of contact list window</short>
+        <long></long>
+      </locale>
+    </schema>
+    <schema>
+      <key>/schemas/apps/gabber/history/last_rotate_month</key>
+      <applyto>/apps/gabber/history/last_rotate_month</applyto>
+      <owner>gabber</owner>
+      <type>int</type>
+      <default>0</default>
+      <locale name="C">
+        <short>temas</short>
+        <long>I don't even know what the default should be. Annoy temas to get this fixed.</long>
+      </locale>
+    </schema>
+    <schema>
+      <key>/schemas/apps/gabber/history/last_rotate_year</key>
+      <applyto>/apps/gabber/history/last_rotate_year</applyto>
+      <owner>gabber</owner>
+      <type>int</type>
+      <default>0</default>
+      <locale name="C">
+        <short>temas</short>
+        <long>I don't even know what the default should be. Annoy temas to get this fixed.</long>
+      </locale>
+    </schema>
+    <schema>
+      <key>/schemas/apps/gabber/history/moved_old_logs</key>
+      <applyto>/apps/gabber/history/moved_old_logs</applyto>
+      <owner>gabber</owner>
+      <type>bool</type>
+      <default>false</default>
+      <locale name="C">
+        <short>temas</short>
+        <long>This probably shouldn't exist anymore. Annoy temas to get it removed.</long>
+      </locale>
+    </schema>
+    <schema>
+      <key>/schemas/apps/gabber/paths/libdir</key>
+      <applyto>/apps/gabber/paths/libdir</applyto>
+      <owner>gabber</owner>
+      <type>string</type>
+      <default>@prefix@/lib/@PACKAGE@</default>
+      <locale name="C">
+        <short>Library directory</short>
+        <long>The directory where libraries are found.</long>
+      </locale>
+    </schema>
+    <schema>
+      <key>/schemas/apps/gabber/paths/pixmapdir</key>
+      <applyto>/apps/gabber/paths/pixmapdir</applyto>
+      <owner>gabber</owner>
+      <type>string</type>
+      <default>@prefix@/share/pixmaps/@PACKAGE@</default>
+      <locale name="C">
+        <short>Pixmap directory</short>
+        <long>The directory where pixmap images are found.</long>
+      </locale>
+    </schema>
+    <schema>
+      <key>/schemas/apps/gabber/paths/datadir</key>
+      <applyto>/apps/gabber/paths/datadir</applyto>
+      <owner>gabber</owner>
+      <type>string</type>
+      <default>@prefix@/share/@PACKAGE@</default>
+      <locale name="C">
+        <short>Pixmap directory</short>
+        <long>The directory where data files are found.</long>
+      </locale>
+    </schema>
+    <schema>
+      <key>/schemas/apps/gabber/paths/plugindirs</key>
+      <applyto>/apps/gabber/paths/plugindirs</applyto>
+      <owner>gabber</owner>
+      <type>list</type>
+      <list_type>string</list_type>
+      <default>[@prefix@/lib/@PACKAGE@]</default>
+      <locale name="C">
+        <short>Plugin directories</short>
+        <long>The directories where Gabber Modules (plugins) can be found.</long>
+      </locale>
+    </schema>
+    <schema>
+      <key>/schemas/apps/gabber/plugins/pluginlist</key>
+      <applyto>/apps/gabber/plugins/pluginlist</applyto>
+      <owner>gabber</owner>
+      <type>list</type>
+      <list_type>string</list_type>
+      <default>[chat,standalone,groupchat]</default>
+      <locale name="C">
+        <short>The list of the plugins</short>
+        <long>The plugins listed here will load automatically at startup</long>
+      </locale>
+    </schema>
+    <schema>
+      <key>/schemas/apps/gabber/autoaway/enable</key>
+      <applyto>/apps/gabber/autoaway/enable</applyto>
+      <owner>gabber</owner>
+      <type>bool</type>
+      <default>true</default>
+      <locale name="C">
+        <short>Automatically change presence when idle</short>
+        <long>If this is enabled, Gabber will poll the XScreenSaver Extension to figure out when this X session is idle. After the specified amount of time, Gabber will automatically change presence to Away and then Extended Away.</long>
+      </locale>
+    </schema>
+    <schema>
+      <key>/schemas/apps/gabber/autoaway/idletime_visible</key>
+      <applyto>/apps/gabber/autoaway/idletime_visible</applyto>
+      <owner>gabber</owner>
+      <type>bool</type>
+      <default>true</default>
+      <locale name="C">
+        <short>Allow others to see idle time</short>
+        <long>If this is enabled, other people may see how long your X session has been idle. If this is disabled, autoaway can still work--others will see that you're away--but they won't know how long you've been away.</long>
+      </locale>
+    </schema>
+    <schema>
+      <key>/schemas/apps/gabber/autoaway/away_after</key>
+      <applyto>/apps/gabber/autoaway/away_after</applyto>
+      <owner>gabber</owner>
+      <type>int</type>
+      <default>10</default>
+      <locale name="C">
+        <short>Away after x minutes</short>
+        <long>If autoaway is enabled, Gabber will set your presence to Away after the specified number of minutes</long>
+      </locale>
+    </schema>
+    <schema>
+      <key>/schemas/apps/gabber/autoaway/xa_after</key>
+      <applyto>/apps/gabber/autoaway/xa_after</applyto>
+      <owner>gabber</owner>
+      <type>int</type>
+      <default>30</default>
+      <locale name="C">
+        <short>Extended Away after x minutes</short>
+        <long>If autoaway is enabled, Gabber will set your presence to Extended Away after the specified number of minutes</long>
+      </locale>
+    </schema>
+    <schema>
+      <key>/schemas/apps/gabber/autoaway/awaymessage</key>
+      <applyto>/apps/gabber/autoaway/awaymessage</applyto>
+      <owner>gabber</owner>
+      <type>string</type>
+      <default>Automatically away</default>
+      <locale name="C">
+        <short>Autoaway status message</short>
+        <long>This is the status message Gabber will use when setting your presence to Away or Extended Away</long>
+      </locale>
+    </schema>
+    <schema>
+      <key>/schemas/apps/gabber/autoaway/zero_priority</key>
+      <applyto>/apps/gabber/autoaway/zero_priority</applyto>
+      <owner>gabber</owner>
+      <type>bool</type>
+      <default>true</default>
+      <locale name="C">
+        <short>Set the presence priority to 0</short>
+        <long>If this is enabled, Gabber will set the presence priority to 0 when autoaway. This means that if you have other clients or connections to Jabber on the same account with a priority higher than 0, messages will go to those clients instead of your now-idle Gabber connection.</long>
+      </locale>
+    </schema>
+    <schema>
+      <key>/schemas/apps/gabber/avatar/jid</key>
+      <applyto>/apps/gabber/avatar/jid</applyto>
+      <owner>gabber</owner>
+      <type>string</type>
+      <default></default>
+      <locale name="C">
+        <short>The JID of the avatar pubsub server</short>
+        <long>This is the JID where the pubsub server resides with the node for avatar publishes.</long>
+      </locale>
+    </schema>
+    <schema>
+      <key>/schemas/apps/gabber/avatar/node</key>
+      <applyto>/apps/gabber/avatar/node</applyto>
+      <owner>gabber</owner>
+      <type>string</type>
+      <default></default>
+      <locale name="C">
+        <short>The node to use on the avatar pubsub server for avatar info</short>
+        <long>This is the node to use on the pubsub server for avatar publishes.</long>
+      </locale>
+    </schema>
+    <schema>
+      <key>/schemas/apps/gabber/avatar/hash</key>
+      <applyto>/apps/gabber/avatar/hash</applyto>
+      <owner>gabber</owner>
+      <type>string</type>
+      <default></default>
+      <locale name="C">
+        <short>The MD5 hash of the local avatar.</short>
+        <long>The MD5 hash of the image that was last used on the local system.</long>
+      </locale>
+    </schema>
+    <schema>
+      <key>/schemas/apps/gabber/avatar/filename</key>
+      <applyto>/apps/gabber/avatar/filename</applyto>
+      <owner>gabber</owner>
+      <type>string</type>
+      <default></default>
+      <locale name="C">
+        <short>The filename of the current avatar.</short>
+        <long>The filename of the current avatar.</long>
+      </locale>
+    </schema>
+  </schemalist>
+</gconfschemafile>

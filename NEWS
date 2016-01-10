@@ -1,0 +1,44 @@
+Gabber NEWS
+-----------
+
+heading_to Gabber 1.9.5
+	* Display a dialog when someone removes you and denies presence
+	* Italian translation by Ciro Mattia Gonano <gonano@CS.UniBO.It>
+	* Brazilian Portuguese translation by Goedson Teixeira Paixao <goedson@debian.org>
+
+2004-06-11 Gabber 1.9.4
+	* Chat text entry automatically expands (thanks Gossip)
+	* Fix bug with closing Group Chat Join dialog (Luke Renn)
+	* Contact List backend rewritten (AGAIN)
+	* Contact Info now displays some client capabilities
+	* Add Contact Dialog now supports registration of gateways
+	* Standalone Messages can now display embedded URIs
+	* Added support for translations (none have been contributed yet)
+
+2003-01-22 Gabber 1.9.3
+	* Ability to edit vCard (My Information)
+	* Messages will await opening when away, busy, or xa
+	* Option to make messages always await opening (queue, pending)
+	* Docklet to display queued messages
+	* Connection Settings are accessible while logged in
+	* Fixed bug with contact list pixmaps updating
+	* Implemented autoconnect
+
+2003-12-31 Gabber 1.9.2
+	* Roster model reworked, should fix lots of crashes
+	* JabberIDs seen in chats, messages, etc. now have right-click menus
+	* Basic spell-checking support via gtkspell
+	* Fixed a crash on log out
+	* Basic URL support
+	* Goedson Teixeira Paixao fixed the About dialog
+
+2003-11-30 Gabber 1.9.1
+	* SSL, save password, other Log In dialog options implemented
+	* Problem with gabber.schemas not being generated fixed
+	* Advanced file transfer support
+	* Auto-away support	
+	* Gateway support in Add Contact Dialog
+
+2003-06-09 Gabber 1.9.0
+	* Gabber for Gnome 2 initial release
+	* Supports Chat, Standalone Message, Contact List, Add Contact

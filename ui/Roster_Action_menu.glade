@@ -1,0 +1,37 @@
+<?xml version="1.0" standalone="no"?> <!--*- mode: xml -*-->
+<!DOCTYPE glade-interface SYSTEM "http://glade.gnome.org/glade-2.0.dtd">
+
+<glade-interface>
+
+<widget class="GtkMenu" id="Roster_Action_menu">
+
+  <child>
+    <widget class="GtkMenuItem" id="Separator1">
+      <property name="visible">True</property>
+    </widget>
+  </child>
+
+  <child>
+    <widget class="GtkMenuItem" id="AddContact_item">
+      <property name="visible">True</property>
+      <property name="label" translatable="yes">Add _Contact...</property>
+      <property name="use_underline">True</property>
+    </widget>
+  </child>
+
+  <child>
+    <widget class="GtkMenuItem" id="separator4">
+      <property name="visible">True</property>
+    </widget>
+  </child>
+
+  <child>
+    <widget class="GtkMenuItem" id="JoinGroupChat_item">
+      <property name="visible">True</property>
+      <property name="label" translatable="yes">_Join Group Chat...</property>
+      <property name="use_underline">True</property>
+    </widget>
+  </child>
+</widget>
+
+</glade-interface>
