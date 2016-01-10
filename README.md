@@ -15,8 +15,11 @@ README.cvs contained the following information:
 
 ### autogen
 autoconf >= 2.50
+
 automake >= 1.5 (?)
+
 gettext  >= 0.11.2
+
 intltool >= 0.21
 
 jabberoo is in its own CVS module on JabberStudio.
@@ -25,9 +28,7 @@ jabberoo is in its own CVS module on JabberStudio.
 
 
 ### make install
-        Should you choose to *not* 'make install' (as may often be the case
-for testing) and you have never installed gabber2 before, then be sure to at 
-least install the GConf files by doing:
+Should you choose to *not* 'make install' (as may often be the case for testing) and you have never installed gabber2 before, then be sure to at least install the GConf files by doing:
         make install-schemas
 Otherwise, GConf won't be too happy.
 
